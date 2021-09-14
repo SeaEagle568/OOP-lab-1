@@ -10,9 +10,9 @@ class IStrategy {
 public:
     virtual double nextNumber() = 0;
 
-    virtual double nextNumber(double lower, double upper) = 0;
+    double nextNumber(double lower, double upper);
 
-    virtual ~IStrategy() {};
+    virtual ~IStrategy() = default;
 };
 
 

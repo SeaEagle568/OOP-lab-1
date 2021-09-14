@@ -5,7 +5,7 @@
 		<Option title="Lab1"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\cmake-build-debug\;CMake Files\cmake-build-debug\_deps\;CMake Files\cmake-build-debug\_deps\googletest-src\;CMake Files\cmake-build-debug\_deps\googletest-src\googlemock\;CMake Files\cmake-build-debug\_deps\googletest-src\googlemock\cmake\;CMake Files\cmake-build-debug\_deps\googletest-src\googletest\;CMake Files\cmake-build-debug\_deps\googletest-src\googletest\cmake\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\Google_tests\;CMake Files\Google_tests\lib\;CMake Files\Google_tests\lib\googlemock\;CMake Files\Google_tests\lib\googlemock\cmake\;CMake Files\Google_tests\lib\googletest\;CMake Files\Google_tests\lib\googletest\cmake\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug"/>
@@ -52,6 +52,54 @@
 				<Option type="4"/>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="random">
+				<Option output="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/librandom.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/seaeagle/CLionProjects/Lab1/Google_tests/lib/googletest/include"/>
+					<Add directory="/home/seaeagle/CLionProjects/Lab1/Google_tests/lib/googletest"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Makefile&quot;  VERBOSE=1 random"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="random/fast">
+				<Option output="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/librandom.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/seaeagle/CLionProjects/Lab1/Google_tests/lib/googletest/include"/>
+					<Add directory="/home/seaeagle/CLionProjects/Lab1/Google_tests/lib/googletest"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Makefile&quot;  VERBOSE=1 random/fast"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -111,16 +159,6 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="test">
-				<Option working_dir="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Makefile&quot;  VERBOSE=1 test"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 			<Target title="rebuild_cache">
 				<Option working_dir="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug"/>
 				<Option type="4"/>
@@ -131,17 +169,15 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="gmock_main">
-				<Option output="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/lib/libgmock_maind.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-build/googlemock"/>
+			<Target title="Google_Tests_run">
+				<Option output="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Google_tests/Google_Tests_run" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Google_tests"/>
 				<Option object_output="./"/>
-				<Option type="2"/>
+				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-src/googlemock/include"/>
-					<Add directory="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-src/googlemock"/>
-					<Add directory="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-src/googletest/include"/>
-					<Add directory="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-src/googletest"/>
+					<Add directory="/home/seaeagle/CLionProjects/Lab1/Google_tests/lib/googletest/include"/>
+					<Add directory="/home/seaeagle/CLionProjects/Lab1/Google_tests/lib/googletest"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0/x86_64-pc-linux-gnu"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0/backward"/>
@@ -151,23 +187,73 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 gmock_main"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Google_tests/Makefile&quot;  VERBOSE=1 Google_Tests_run"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Google_tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Google_tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Google_tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Google_Tests_run/fast">
+				<Option output="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Google_tests/Google_Tests_run" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Google_tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/seaeagle/CLionProjects/Lab1/Google_tests/lib/googletest/include"/>
+					<Add directory="/home/seaeagle/CLionProjects/Lab1/Google_tests/lib/googletest"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Google_tests/Makefile&quot;  VERBOSE=1 Google_Tests_run/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Google_tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Google_tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Google_tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gmock_main">
+				<Option output="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/lib/libgmock_maind.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Google_tests/lib/googlemock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/seaeagle/CLionProjects/Lab1/Google_tests/lib/googlemock/include"/>
+					<Add directory="/home/seaeagle/CLionProjects/Lab1/Google_tests/lib/googlemock"/>
+					<Add directory="/home/seaeagle/CLionProjects/Lab1/Google_tests/lib/googletest/include"/>
+					<Add directory="/home/seaeagle/CLionProjects/Lab1/Google_tests/lib/googletest"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 gmock_main"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gmock_main/fast">
 				<Option output="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/lib/libgmock_maind.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-build/googlemock"/>
+				<Option working_dir="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Google_tests/lib/googlemock"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-src/googlemock/include"/>
-					<Add directory="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-src/googlemock"/>
-					<Add directory="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-src/googletest/include"/>
-					<Add directory="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-src/googletest"/>
+					<Add directory="/home/seaeagle/CLionProjects/Lab1/Google_tests/lib/googlemock/include"/>
+					<Add directory="/home/seaeagle/CLionProjects/Lab1/Google_tests/lib/googlemock"/>
+					<Add directory="/home/seaeagle/CLionProjects/Lab1/Google_tests/lib/googletest/include"/>
+					<Add directory="/home/seaeagle/CLionProjects/Lab1/Google_tests/lib/googletest"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0/x86_64-pc-linux-gnu"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0/backward"/>
@@ -177,23 +263,23 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 gmock_main/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 gmock_main/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gmock">
 				<Option output="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/lib/libgmockd.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-build/googlemock"/>
+				<Option working_dir="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Google_tests/lib/googlemock"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-src/googlemock/include"/>
-					<Add directory="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-src/googlemock"/>
-					<Add directory="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-src/googletest/include"/>
-					<Add directory="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-src/googletest"/>
+					<Add directory="/home/seaeagle/CLionProjects/Lab1/Google_tests/lib/googlemock/include"/>
+					<Add directory="/home/seaeagle/CLionProjects/Lab1/Google_tests/lib/googlemock"/>
+					<Add directory="/home/seaeagle/CLionProjects/Lab1/Google_tests/lib/googletest/include"/>
+					<Add directory="/home/seaeagle/CLionProjects/Lab1/Google_tests/lib/googletest"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0/x86_64-pc-linux-gnu"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0/backward"/>
@@ -203,23 +289,23 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 gmock"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 gmock"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gmock/fast">
 				<Option output="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/lib/libgmockd.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-build/googlemock"/>
+				<Option working_dir="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Google_tests/lib/googlemock"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-src/googlemock/include"/>
-					<Add directory="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-src/googlemock"/>
-					<Add directory="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-src/googletest/include"/>
-					<Add directory="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-src/googletest"/>
+					<Add directory="/home/seaeagle/CLionProjects/Lab1/Google_tests/lib/googlemock/include"/>
+					<Add directory="/home/seaeagle/CLionProjects/Lab1/Google_tests/lib/googlemock"/>
+					<Add directory="/home/seaeagle/CLionProjects/Lab1/Google_tests/lib/googletest/include"/>
+					<Add directory="/home/seaeagle/CLionProjects/Lab1/Google_tests/lib/googletest"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0/x86_64-pc-linux-gnu"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0/backward"/>
@@ -229,69 +315,21 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 gmock/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="gtest">
-				<Option output="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/lib/libgtestd.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-build/googletest"/>
-				<Option object_output="./"/>
-				<Option type="2"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-src/googletest/include"/>
-					<Add directory="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-src/googletest"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0/x86_64-pc-linux-gnu"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include-fixed"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-build/googletest/Makefile&quot;  VERBOSE=1 gtest"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-build/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-build/googletest/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-build/googletest/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="gtest/fast">
-				<Option output="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/lib/libgtestd.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-build/googletest"/>
-				<Option object_output="./"/>
-				<Option type="2"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-src/googletest/include"/>
-					<Add directory="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-src/googletest"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0/x86_64-pc-linux-gnu"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include-fixed"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-build/googletest/Makefile&quot;  VERBOSE=1 gtest/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-build/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-build/googletest/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-build/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 gmock/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gtest_main">
 				<Option output="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/lib/libgtest_maind.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-build/googletest"/>
+				<Option working_dir="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Google_tests/lib/googletest"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-src/googletest/include"/>
-					<Add directory="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-src/googletest"/>
+					<Add directory="/home/seaeagle/CLionProjects/Lab1/Google_tests/lib/googletest/include"/>
+					<Add directory="/home/seaeagle/CLionProjects/Lab1/Google_tests/lib/googletest"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0/x86_64-pc-linux-gnu"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0/backward"/>
@@ -301,21 +339,21 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-build/googletest/Makefile&quot;  VERBOSE=1 gtest_main"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-build/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-build/googletest/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-build/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 gtest_main"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gtest_main/fast">
 				<Option output="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/lib/libgtest_maind.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-build/googletest"/>
+				<Option working_dir="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Google_tests/lib/googletest"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-src/googletest/include"/>
-					<Add directory="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-src/googletest"/>
+					<Add directory="/home/seaeagle/CLionProjects/Lab1/Google_tests/lib/googletest/include"/>
+					<Add directory="/home/seaeagle/CLionProjects/Lab1/Google_tests/lib/googletest"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0/x86_64-pc-linux-gnu"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0/backward"/>
@@ -325,42 +363,115 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-build/googletest/Makefile&quot;  VERBOSE=1 gtest_main/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-build/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-build/googletest/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-build/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 gtest_main/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest">
+				<Option output="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/lib/libgtestd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Google_tests/lib/googletest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/seaeagle/CLionProjects/Lab1/Google_tests/lib/googletest/include"/>
+					<Add directory="/home/seaeagle/CLionProjects/Lab1/Google_tests/lib/googletest"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 gtest"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest/fast">
+				<Option output="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/lib/libgtestd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Google_tests/lib/googletest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/seaeagle/CLionProjects/Lab1/Google_tests/lib/googletest/include"/>
+					<Add directory="/home/seaeagle/CLionProjects/Lab1/Google_tests/lib/googletest"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 gtest/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/seaeagle/CLionProjects/Lab1/Algorithms/LinialCongruentMethod.cpp">
+		<Unit filename="/home/seaeagle/CLionProjects/Lab1/Algorithms/FibonacciMethod.cpp">
 			<Option target="Lab1"/>
 		</Unit>
-		<Unit filename="/home/seaeagle/CLionProjects/Lab1/Headers/Algorithms/LinialCongruentMethod.h">
+		<Unit filename="/home/seaeagle/CLionProjects/Lab1/Algorithms/InverseCongruentialMethod.cpp">
 			<Option target="Lab1"/>
 		</Unit>
-		<Unit filename="/home/seaeagle/CLionProjects/Lab1/Headers/IStrategy.h">
+		<Unit filename="/home/seaeagle/CLionProjects/Lab1/Algorithms/LinialCongruentialMethod.cpp">
 			<Option target="Lab1"/>
 		</Unit>
-		<Unit filename="/home/seaeagle/CLionProjects/Lab1/Headers/RandomGenerator.h">
+		<Unit filename="/home/seaeagle/CLionProjects/Lab1/Algorithms/QuadraticCongruentialMethod.cpp">
 			<Option target="Lab1"/>
+		</Unit>
+		<Unit filename="/home/seaeagle/CLionProjects/Lab1/Google_tests/RandomGenerator_test.cpp">
+			<Option target="Google_Tests_run"/>
+		</Unit>
+		<Unit filename="/home/seaeagle/CLionProjects/Lab1/Google_tests/lib/googlemock/src/gmock-all.cc">
+			<Option target="gmock"/>
+		</Unit>
+		<Unit filename="/home/seaeagle/CLionProjects/Lab1/Google_tests/lib/googlemock/src/gmock_main.cc">
+			<Option target="gmock_main"/>
+		</Unit>
+		<Unit filename="/home/seaeagle/CLionProjects/Lab1/Google_tests/lib/googletest/src/gtest-all.cc">
+			<Option target="gtest"/>
+		</Unit>
+		<Unit filename="/home/seaeagle/CLionProjects/Lab1/Google_tests/lib/googletest/src/gtest_main.cc">
+			<Option target="gtest_main"/>
 		</Unit>
 		<Unit filename="/home/seaeagle/CLionProjects/Lab1/IStrategy.cpp">
 			<Option target="Lab1"/>
 		</Unit>
 		<Unit filename="/home/seaeagle/CLionProjects/Lab1/RandomGenerator.cpp">
+			<Option target="random"/>
+			<Option target="Lab1"/>
+			<Option target="Google_Tests_run"/>
+		</Unit>
+		<Unit filename="/home/seaeagle/CLionProjects/Lab1/include/Algorithms/FibonacciMethod.h">
 			<Option target="Lab1"/>
 		</Unit>
-		<Unit filename="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-src/googlemock/src/gmock-all.cc">
-			<Option target="gmock"/>
+		<Unit filename="/home/seaeagle/CLionProjects/Lab1/include/Algorithms/InverseCongruentialMethod.h">
+			<Option target="Lab1"/>
 		</Unit>
-		<Unit filename="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-src/googlemock/src/gmock_main.cc">
-			<Option target="gmock_main"/>
+		<Unit filename="/home/seaeagle/CLionProjects/Lab1/include/Algorithms/LinialCongruentialMethod.h">
+			<Option target="Lab1"/>
 		</Unit>
-		<Unit filename="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-src/googletest/src/gtest-all.cc">
-			<Option target="gtest"/>
+		<Unit filename="/home/seaeagle/CLionProjects/Lab1/include/Algorithms/QuadraticCongruentialMethod.h">
+			<Option target="Lab1"/>
 		</Unit>
-		<Unit filename="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-src/googletest/src/gtest_main.cc">
-			<Option target="gtest_main"/>
+		<Unit filename="/home/seaeagle/CLionProjects/Lab1/include/IStrategy.h">
+			<Option target="Lab1"/>
+		</Unit>
+		<Unit filename="/home/seaeagle/CLionProjects/Lab1/include/RandomGenerator.h">
+			<Option target="random"/>
+			<Option target="Lab1"/>
+			<Option target="Google_Tests_run"/>
 		</Unit>
 		<Unit filename="/home/seaeagle/CLionProjects/Lab1/main.cpp">
 			<Option target="Lab1"/>
@@ -368,32 +479,35 @@
 		<Unit filename="/home/seaeagle/CLionProjects/Lab1/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-src/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\googletest-src\"/>
+		<Unit filename="/home/seaeagle/CLionProjects/Lab1/Google_tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Google_tests\"/>
 		</Unit>
-		<Unit filename="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-src/googlemock/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\googletest-src\googlemock\"/>
+		<Unit filename="/home/seaeagle/CLionProjects/Lab1/Google_tests/lib/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Google_tests\lib\"/>
 		</Unit>
-		<Unit filename="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-src/googlemock/cmake/gmock.pc.in">
-			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\googletest-src\googlemock\cmake\"/>
+		<Unit filename="/home/seaeagle/CLionProjects/Lab1/Google_tests/lib/googlemock/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Google_tests\lib\googlemock\"/>
 		</Unit>
-		<Unit filename="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-src/googlemock/cmake/gmock_main.pc.in">
-			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\googletest-src\googlemock\cmake\"/>
+		<Unit filename="/home/seaeagle/CLionProjects/Lab1/Google_tests/lib/googlemock/cmake/gmock.pc.in">
+			<Option virtualFolder="CMake Files\Google_tests\lib\googlemock\cmake\"/>
 		</Unit>
-		<Unit filename="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-src/googletest/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\googletest-src\googletest\"/>
+		<Unit filename="/home/seaeagle/CLionProjects/Lab1/Google_tests/lib/googlemock/cmake/gmock_main.pc.in">
+			<Option virtualFolder="CMake Files\Google_tests\lib\googlemock\cmake\"/>
 		</Unit>
-		<Unit filename="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-src/googletest/cmake/Config.cmake.in">
-			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\googletest-src\googletest\cmake\"/>
+		<Unit filename="/home/seaeagle/CLionProjects/Lab1/Google_tests/lib/googletest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Google_tests\lib\googletest\"/>
 		</Unit>
-		<Unit filename="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-src/googletest/cmake/gtest.pc.in">
-			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\googletest-src\googletest\cmake\"/>
+		<Unit filename="/home/seaeagle/CLionProjects/Lab1/Google_tests/lib/googletest/cmake/Config.cmake.in">
+			<Option virtualFolder="CMake Files\Google_tests\lib\googletest\cmake\"/>
 		</Unit>
-		<Unit filename="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-src/googletest/cmake/gtest_main.pc.in">
-			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\googletest-src\googletest\cmake\"/>
+		<Unit filename="/home/seaeagle/CLionProjects/Lab1/Google_tests/lib/googletest/cmake/gtest.pc.in">
+			<Option virtualFolder="CMake Files\Google_tests\lib\googletest\cmake\"/>
 		</Unit>
-		<Unit filename="/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-src/googletest/cmake/internal_utils.cmake">
-			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\googletest-src\googletest\cmake\"/>
+		<Unit filename="/home/seaeagle/CLionProjects/Lab1/Google_tests/lib/googletest/cmake/gtest_main.pc.in">
+			<Option virtualFolder="CMake Files\Google_tests\lib\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/home/seaeagle/CLionProjects/Lab1/Google_tests/lib/googletest/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\Google_tests\lib\googletest\cmake\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

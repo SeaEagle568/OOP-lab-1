@@ -120,16 +120,6 @@ edit_cache:
 edit_cache/fast: edit_cache
 .PHONY : edit_cache/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/home/seaeagle/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/212.5080.54/bin/cmake/linux/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-.PHONY : test/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -172,6 +162,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named random
+
+# Build rule for target.
+random: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 random
+.PHONY : random
+
+# fast build rule for target.
+random/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/random.dir/build.make CMakeFiles/random.dir/build
+.PHONY : random/fast
+
+#=============================================================================
 # Target rules for targets named Lab1
 
 # Build rule for target.
@@ -185,6 +188,19 @@ Lab1/fast:
 .PHONY : Lab1/fast
 
 #=============================================================================
+# Target rules for targets named Google_Tests_run
+
+# Build rule for target.
+Google_Tests_run: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Google_Tests_run
+.PHONY : Google_Tests_run
+
+# fast build rule for target.
+Google_Tests_run/fast:
+	$(MAKE) $(MAKESILENT) -f Google_tests/CMakeFiles/Google_Tests_run.dir/build.make Google_tests/CMakeFiles/Google_Tests_run.dir/build
+.PHONY : Google_Tests_run/fast
+
+#=============================================================================
 # Target rules for targets named gmock_main
 
 # Build rule for target.
@@ -194,7 +210,7 @@ gmock_main: cmake_check_build_system
 
 # fast build rule for target.
 gmock_main/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build
+	$(MAKE) $(MAKESILENT) -f Google_tests/lib/googlemock/CMakeFiles/gmock_main.dir/build.make Google_tests/lib/googlemock/CMakeFiles/gmock_main.dir/build
 .PHONY : gmock_main/fast
 
 #=============================================================================
@@ -207,21 +223,8 @@ gmock: cmake_check_build_system
 
 # fast build rule for target.
 gmock/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build
+	$(MAKE) $(MAKESILENT) -f Google_tests/lib/googlemock/CMakeFiles/gmock.dir/build.make Google_tests/lib/googlemock/CMakeFiles/gmock.dir/build
 .PHONY : gmock/fast
-
-#=============================================================================
-# Target rules for targets named gtest
-
-# Build rule for target.
-gtest: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest
-.PHONY : gtest
-
-# fast build rule for target.
-gtest/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build
-.PHONY : gtest/fast
 
 #=============================================================================
 # Target rules for targets named gtest_main
@@ -233,32 +236,117 @@ gtest_main: cmake_check_build_system
 
 # fast build rule for target.
 gtest_main/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
+	$(MAKE) $(MAKESILENT) -f Google_tests/lib/googletest/CMakeFiles/gtest_main.dir/build.make Google_tests/lib/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
-Algorithms/LinialCongruentMethod.o: Algorithms/LinialCongruentMethod.cpp.o
-.PHONY : Algorithms/LinialCongruentMethod.o
+#=============================================================================
+# Target rules for targets named gtest
+
+# Build rule for target.
+gtest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest
+.PHONY : gtest
+
+# fast build rule for target.
+gtest/fast:
+	$(MAKE) $(MAKESILENT) -f Google_tests/lib/googletest/CMakeFiles/gtest.dir/build.make Google_tests/lib/googletest/CMakeFiles/gtest.dir/build
+.PHONY : gtest/fast
+
+Algorithms/FibonacciMethod.o: Algorithms/FibonacciMethod.cpp.o
+.PHONY : Algorithms/FibonacciMethod.o
 
 # target to build an object file
-Algorithms/LinialCongruentMethod.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/Algorithms/LinialCongruentMethod.cpp.o
-.PHONY : Algorithms/LinialCongruentMethod.cpp.o
+Algorithms/FibonacciMethod.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/Algorithms/FibonacciMethod.cpp.o
+.PHONY : Algorithms/FibonacciMethod.cpp.o
 
-Algorithms/LinialCongruentMethod.i: Algorithms/LinialCongruentMethod.cpp.i
-.PHONY : Algorithms/LinialCongruentMethod.i
+Algorithms/FibonacciMethod.i: Algorithms/FibonacciMethod.cpp.i
+.PHONY : Algorithms/FibonacciMethod.i
 
 # target to preprocess a source file
-Algorithms/LinialCongruentMethod.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/Algorithms/LinialCongruentMethod.cpp.i
-.PHONY : Algorithms/LinialCongruentMethod.cpp.i
+Algorithms/FibonacciMethod.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/Algorithms/FibonacciMethod.cpp.i
+.PHONY : Algorithms/FibonacciMethod.cpp.i
 
-Algorithms/LinialCongruentMethod.s: Algorithms/LinialCongruentMethod.cpp.s
-.PHONY : Algorithms/LinialCongruentMethod.s
+Algorithms/FibonacciMethod.s: Algorithms/FibonacciMethod.cpp.s
+.PHONY : Algorithms/FibonacciMethod.s
 
 # target to generate assembly for a file
-Algorithms/LinialCongruentMethod.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/Algorithms/LinialCongruentMethod.cpp.s
-.PHONY : Algorithms/LinialCongruentMethod.cpp.s
+Algorithms/FibonacciMethod.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/Algorithms/FibonacciMethod.cpp.s
+.PHONY : Algorithms/FibonacciMethod.cpp.s
+
+Algorithms/InverseCongruentialMethod.o: Algorithms/InverseCongruentialMethod.cpp.o
+.PHONY : Algorithms/InverseCongruentialMethod.o
+
+# target to build an object file
+Algorithms/InverseCongruentialMethod.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/Algorithms/InverseCongruentialMethod.cpp.o
+.PHONY : Algorithms/InverseCongruentialMethod.cpp.o
+
+Algorithms/InverseCongruentialMethod.i: Algorithms/InverseCongruentialMethod.cpp.i
+.PHONY : Algorithms/InverseCongruentialMethod.i
+
+# target to preprocess a source file
+Algorithms/InverseCongruentialMethod.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/Algorithms/InverseCongruentialMethod.cpp.i
+.PHONY : Algorithms/InverseCongruentialMethod.cpp.i
+
+Algorithms/InverseCongruentialMethod.s: Algorithms/InverseCongruentialMethod.cpp.s
+.PHONY : Algorithms/InverseCongruentialMethod.s
+
+# target to generate assembly for a file
+Algorithms/InverseCongruentialMethod.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/Algorithms/InverseCongruentialMethod.cpp.s
+.PHONY : Algorithms/InverseCongruentialMethod.cpp.s
+
+Algorithms/LinialCongruentialMethod.o: Algorithms/LinialCongruentialMethod.cpp.o
+.PHONY : Algorithms/LinialCongruentialMethod.o
+
+# target to build an object file
+Algorithms/LinialCongruentialMethod.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/Algorithms/LinialCongruentialMethod.cpp.o
+.PHONY : Algorithms/LinialCongruentialMethod.cpp.o
+
+Algorithms/LinialCongruentialMethod.i: Algorithms/LinialCongruentialMethod.cpp.i
+.PHONY : Algorithms/LinialCongruentialMethod.i
+
+# target to preprocess a source file
+Algorithms/LinialCongruentialMethod.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/Algorithms/LinialCongruentialMethod.cpp.i
+.PHONY : Algorithms/LinialCongruentialMethod.cpp.i
+
+Algorithms/LinialCongruentialMethod.s: Algorithms/LinialCongruentialMethod.cpp.s
+.PHONY : Algorithms/LinialCongruentialMethod.s
+
+# target to generate assembly for a file
+Algorithms/LinialCongruentialMethod.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/Algorithms/LinialCongruentialMethod.cpp.s
+.PHONY : Algorithms/LinialCongruentialMethod.cpp.s
+
+Algorithms/QuadraticCongruentialMethod.o: Algorithms/QuadraticCongruentialMethod.cpp.o
+.PHONY : Algorithms/QuadraticCongruentialMethod.o
+
+# target to build an object file
+Algorithms/QuadraticCongruentialMethod.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/Algorithms/QuadraticCongruentialMethod.cpp.o
+.PHONY : Algorithms/QuadraticCongruentialMethod.cpp.o
+
+Algorithms/QuadraticCongruentialMethod.i: Algorithms/QuadraticCongruentialMethod.cpp.i
+.PHONY : Algorithms/QuadraticCongruentialMethod.i
+
+# target to preprocess a source file
+Algorithms/QuadraticCongruentialMethod.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/Algorithms/QuadraticCongruentialMethod.cpp.i
+.PHONY : Algorithms/QuadraticCongruentialMethod.cpp.i
+
+Algorithms/QuadraticCongruentialMethod.s: Algorithms/QuadraticCongruentialMethod.cpp.s
+.PHONY : Algorithms/QuadraticCongruentialMethod.s
+
+# target to generate assembly for a file
+Algorithms/QuadraticCongruentialMethod.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/Algorithms/QuadraticCongruentialMethod.cpp.s
+.PHONY : Algorithms/QuadraticCongruentialMethod.cpp.s
 
 IStrategy.o: IStrategy.cpp.o
 .PHONY : IStrategy.o
@@ -289,6 +377,7 @@ RandomGenerator.o: RandomGenerator.cpp.o
 
 # target to build an object file
 RandomGenerator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/random.dir/build.make CMakeFiles/random.dir/RandomGenerator.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/RandomGenerator.cpp.o
 .PHONY : RandomGenerator.cpp.o
 
@@ -297,6 +386,7 @@ RandomGenerator.i: RandomGenerator.cpp.i
 
 # target to preprocess a source file
 RandomGenerator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/random.dir/build.make CMakeFiles/random.dir/RandomGenerator.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/RandomGenerator.cpp.i
 .PHONY : RandomGenerator.cpp.i
 
@@ -305,6 +395,7 @@ RandomGenerator.s: RandomGenerator.cpp.s
 
 # target to generate assembly for a file
 RandomGenerator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/random.dir/build.make CMakeFiles/random.dir/RandomGenerator.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/RandomGenerator.cpp.s
 .PHONY : RandomGenerator.cpp.s
 
@@ -344,15 +435,25 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... test"
+	@echo "... Google_Tests_run"
 	@echo "... Lab1"
 	@echo "... gmock"
 	@echo "... gmock_main"
 	@echo "... gtest"
 	@echo "... gtest_main"
-	@echo "... Algorithms/LinialCongruentMethod.o"
-	@echo "... Algorithms/LinialCongruentMethod.i"
-	@echo "... Algorithms/LinialCongruentMethod.s"
+	@echo "... random"
+	@echo "... Algorithms/FibonacciMethod.o"
+	@echo "... Algorithms/FibonacciMethod.i"
+	@echo "... Algorithms/FibonacciMethod.s"
+	@echo "... Algorithms/InverseCongruentialMethod.o"
+	@echo "... Algorithms/InverseCongruentialMethod.i"
+	@echo "... Algorithms/InverseCongruentialMethod.s"
+	@echo "... Algorithms/LinialCongruentialMethod.o"
+	@echo "... Algorithms/LinialCongruentialMethod.i"
+	@echo "... Algorithms/LinialCongruentialMethod.s"
+	@echo "... Algorithms/QuadraticCongruentialMethod.o"
+	@echo "... Algorithms/QuadraticCongruentialMethod.i"
+	@echo "... Algorithms/QuadraticCongruentialMethod.s"
 	@echo "... IStrategy.o"
 	@echo "... IStrategy.i"
 	@echo "... IStrategy.s"

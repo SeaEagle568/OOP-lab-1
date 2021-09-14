@@ -2,12 +2,7 @@ cmake_minimum_required(VERSION 3.20)
 project(Lab1)
 
 set(CMAKE_CXX_STANDARD 17)
-include(FetchContent)
-FetchContent_Declare(
-        googletest
-        URL https://github.com/google/googletest/archive/609281088cfefc76f9d0ce82e1ff6c30cc3591e5.zip
-)
-FetchContent_MakeAvailable(googletest)
-enable_testing()
-include(GoogleTest)
-add_executable(Lab1 main.cpp RandomGenerator.cpp Headers/RandomGenerator.h IStrategy.cpp Headers/IStrategy.h Algorithms/LinialCongruentMethod.cpp Headers/Algorithms/LinialCongruentMethod.h)
+
+add_library(random STATIC RandomGenerator.cpp include/RandomGenerator.h)
+add_executable(Lab1 main.cpp IStrategy.cpp include/IStrategy.h Algorithms/LinialCongruentialMethod.cpp include/Algorithms/LinialCongruentialMethod.h RandomGenerator.cpp include/RandomGenerator.h Algorithms/QuadraticCongruentialMethod.cpp include/Algorithms/QuadraticCongruentialMethod.h Algorithms/FibonacciMethod.cpp include/Algorithms/FibonacciMethod.h Algorithms/InverseCongruentialMethod.cpp include/Algorithms/InverseCongruentialMethod.h)
+add_subdirectory(Google_tests)

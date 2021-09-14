@@ -17,6 +17,28 @@
 //Builds the googlemock subproject
 BUILD_GMOCK:BOOL=ON
 
+//The directory containing a CMake configuration file for Boost.
+Boost_DIR:PATH=/usr/lib64/cmake/Boost-1.76.0
+
+Boost_FILESYSTEM_LIBRARY_RELEASE:STRING=/usr/lib/libboost_filesystem.so.1.76.0
+
+//Path to a file.
+Boost_INCLUDE_DIR:PATH=/usr/include
+
+//Boost library directory DEBUG
+Boost_LIBRARY_DIR_DEBUG:PATH=/usr/lib
+
+//Boost library directory RELEASE
+Boost_LIBRARY_DIR_RELEASE:PATH=/usr/lib
+
+Boost_SYSTEM_LIBRARY_RELEASE:STRING=/usr/lib/libboost_system.so.1.76.0
+
+//Boost unit_test_framework library (debug)
+Boost_UNIT_TEST_FRAMEWORK_LIBRARY_DEBUG:FILEPATH=/usr/lib/libboost_unit_test_framework.so
+
+//Boost unit_test_framework library (release)
+Boost_UNIT_TEST_FRAMEWORK_LIBRARY_RELEASE:FILEPATH=/usr/lib/libboost_unit_test_framework.so
+
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
 
@@ -309,6 +331,12 @@ FETCHCONTENT_UPDATES_DISCONNECTED:BOOL=OFF
 //Enables UPDATE_DISCONNECTED behavior just for population of googletest
 FETCHCONTENT_UPDATES_DISCONNECTED_GOOGLETEST:BOOL=OFF
 
+//Value Computed by CMake
+Google_tests_BINARY_DIR:STATIC=/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Google_tests
+
+//Value Computed by CMake
+Google_tests_SOURCE_DIR:STATIC=/home/seaeagle/CLionProjects/Lab1/Google_tests
+
 //Enable installation of googletest. (Projects embedding googletest
 // may want to turn this OFF.)
 INSTALL_GTEST:BOOL=ON
@@ -325,14 +353,26 @@ ProcessorCount_cmd_nproc:FILEPATH=/usr/bin/nproc
 //Path to a program.
 ProcessorCount_cmd_sysctl:FILEPATH=/usr/bin/sysctl
 
+//The directory containing a CMake configuration file for boost_filesystem.
+boost_filesystem_DIR:PATH=/usr/lib64/cmake/boost_filesystem-1.76.0
+
+//The directory containing a CMake configuration file for boost_headers.
+boost_headers_DIR:PATH=/usr/lib64/cmake/boost_headers-1.76.0
+
+//The directory containing a CMake configuration file for boost_system.
+boost_system_DIR:PATH=/usr/lib64/cmake/boost_system-1.76.0
+
+//The directory containing a CMake configuration file for boost_unit_test_framework.
+boost_unit_test_framework_DIR:PATH=/usr/lib64/cmake/boost_unit_test_framework-1.76.0
+
 //Value Computed by CMake
-gmock_BINARY_DIR:STATIC=/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-build/googlemock
+gmock_BINARY_DIR:STATIC=/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Google_tests/lib/googlemock
 
 //Dependencies for the target
 gmock_LIB_DEPENDS:STATIC=general;gtest;
 
 //Value Computed by CMake
-gmock_SOURCE_DIR:STATIC=/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-src/googlemock
+gmock_SOURCE_DIR:STATIC=/home/seaeagle/CLionProjects/Lab1/Google_tests/lib/googlemock
 
 //Build all of Google Mock's own tests.
 gmock_build_tests:BOOL=OFF
@@ -341,16 +381,16 @@ gmock_build_tests:BOOL=OFF
 gmock_main_LIB_DEPENDS:STATIC=general;gmock;
 
 //Value Computed by CMake
-googletest-distribution_BINARY_DIR:STATIC=/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-build
+googletest-distribution_BINARY_DIR:STATIC=/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Google_tests/lib
 
 //Value Computed by CMake
-googletest-distribution_SOURCE_DIR:STATIC=/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-src
+googletest-distribution_SOURCE_DIR:STATIC=/home/seaeagle/CLionProjects/Lab1/Google_tests/lib
 
 //Value Computed by CMake
-gtest_BINARY_DIR:STATIC=/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-build/googletest
+gtest_BINARY_DIR:STATIC=/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Google_tests/lib/googletest
 
 //Value Computed by CMake
-gtest_SOURCE_DIR:STATIC=/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-src/googletest
+gtest_SOURCE_DIR:STATIC=/home/seaeagle/CLionProjects/Lab1/Google_tests/lib/googletest
 
 //Build gtest's sample programs.
 gtest_build_samples:BOOL=OFF
@@ -363,7 +403,7 @@ gtest_disable_pthreads:BOOL=OFF
 
 //Use shared (DLL) run-time lib even when Google Test is built
 // as static lib.
-gtest_force_shared_crt:BOOL=OFF
+gtest_force_shared_crt:BOOL=ON
 
 //Build gtest with internal symbols hidden in shared libraries.
 gtest_hide_internal_symbols:BOOL=OFF
@@ -376,6 +416,12 @@ gtest_main_LIB_DEPENDS:STATIC=general;gtest;
 # INTERNAL cache entries
 ########################
 
+//ADVANCED property for variable: Boost_DIR
+Boost_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_UNIT_TEST_FRAMEWORK_LIBRARY_DEBUG
+Boost_UNIT_TEST_FRAMEWORK_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_UNIT_TEST_FRAMEWORK_LIBRARY_RELEASE
+Boost_UNIT_TEST_FRAMEWORK_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_ADDR2LINE
 CMAKE_ADDR2LINE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_AR
@@ -524,7 +570,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=4
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -567,6 +613,8 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding Boost
+FIND_PACKAGE_MESSAGE_DETAILS_Boost:INTERNAL=[/usr/lib64/cmake/Boost-1.76.0/BoostConfig.cmake][cfound components: unit_test_framework ][v1.76.0()]
 //Details about finding Python
 FIND_PACKAGE_MESSAGE_DETAILS_Python:INTERNAL=[/usr/bin/python3.9][cfound components: Interpreter ][v3.9.6()]
 //Details about finding Threads
@@ -582,7 +630,16 @@ _Python_EXECUTABLE:INTERNAL=/usr/bin/python3.9
 //Python Properties
 _Python_INTERPRETER_PROPERTIES:INTERNAL=Python;3;9;6;64;;cpython-39-x86_64-linux-gnu;/usr/lib/python3.9;/usr/lib/python3.9;/usr/lib/python3.9/site-packages;/usr/lib/python3.9/site-packages
 _Python_INTERPRETER_SIGNATURE:INTERNAL=0820be857fee647b3d54576d0160a80e
-generated_dir:INTERNAL=/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/_deps/googletest-build/googletest/generated
+//ADVANCED property for variable: boost_filesystem_DIR
+boost_filesystem_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: boost_headers_DIR
+boost_headers_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: boost_system_DIR
+boost_system_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: boost_unit_test_framework_DIR
+boost_unit_test_framework_DIR-ADVANCED:INTERNAL=1
+cmake_package_name:INTERNAL=GTest
+generated_dir:INTERNAL=/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/Google_tests/lib/googletest/generated
 //ADVANCED property for variable: gmock_build_tests
 gmock_build_tests-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: gtest_build_samples

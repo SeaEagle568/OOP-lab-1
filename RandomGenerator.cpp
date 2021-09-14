@@ -2,7 +2,7 @@
 // Created by seaeagle on 07.09.21.
 //
 
-#include "Headers/RandomGenerator.h"
+#include "include/RandomGenerator.h"
 #include<bits/stdc++.h>
 
 using namespace std;
@@ -19,7 +19,7 @@ RandomGenerator::getDistribution(double lower, double upper, double step, int it
     vector<pair<string, string>> result;
 
     addLore(result, lower, upper, step);
-    addValues(result, generatedValues);
+    addValues(result, generatedValues, lower, step);
     return result;
 }
 
@@ -31,28 +31,57 @@ vector<double> RandomGenerator::generateValues(double lower, double upper, int n
     return generatedValues;
 }
 
+
 void RandomGenerator::addLore(vector<pair<string, string>> &list, double lower, double upper, double step) {
-    for (double i = lower; upper - i - step > EPS; i += step) {
-        string lore = "[" + to_string(i) + "; " + to_string(i + step) + ")";
+    size_t maxLength = 0;
+    for (double i = lower; upper - i > EPS; i += step) {
+        string left = removeZeros(to_string(i));
+        string right = removeZeros(to_string(i + step));
+        string lore = "[" + left.append(" ; ").append(right) + ")";
+        maxLength = max(maxLength, lore.size());
         list.emplace_back(lore, "");
     }
-    string &last = list.end()->first;
+
+    for (auto &it : list) {
+        for (size_t i = it.first.size(); i < maxLength; i++) {
+            it.first += " ";
+        }
+    }
+
+    if (list.empty()) return;
+    string &last = list.rbegin()->first;
     last.replace(last.find(')'), 1, "]");
 }
 
 void RandomGenerator::addValues(vector<pair<string, string>> &list, vector<double> &values, double lower, double step) {
     map<double, int> countList;
+    map<int, double> temp;
     for (auto it: values) {
         countList[it]++;
     }
     for (auto it: countList) {
         int index = (int) ((it.first - lower) / step);
-        list[index].second = to_string((double) it.second / (double) values.size());
+        temp[index] += (double) it.second / (double) values.size();
+    }
+    for (auto it : temp) {
+        list[it.first].second = removeZeros(to_string(it.second));
     }
 }
 
 double RandomGenerator::nextNumber() {
     return strategy->nextNumber();
+}
+
+string RandomGenerator::removeZeros(string input) {
+    size_t dotpos = input.find_first_of('.');
+    if (dotpos != string::npos) {
+        size_t pos = input.size() - 1;
+        while ((input[pos] == '0' || input[pos] == '.') && pos >= dotpos) {
+            --pos;
+        }
+        input.erase(pos + 1, string::npos);
+    }
+    return input;
 }
 
 RandomGenerator::~RandomGenerator() = default;
