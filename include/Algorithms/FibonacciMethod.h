@@ -7,19 +7,21 @@
 
 
 #include "../IStrategy.h"
-
+#include<bits/stdc++.h>
+using namespace std;
 class FibonacciMethod : public IStrategy {
 public:
     //double nextNumber(double lower, double upper) override;
 
     double nextNumber() override;
 
-    explicit FibonacciMethod(int seed1, int seed2);
+    explicit FibonacciMethod(int seed1, int seed2, bool printInfo, bool useDefaults);
 
 private:
-    const long long m = (1ll << 31) - 1;
+    long long m = (1ll << 31) - 1;
     long long previous;
     long long subprevious;
+    void printInfo(int seed1, int seed2, bool useDefaults);
 };
 
 

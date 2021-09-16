@@ -300,29 +300,29 @@ Algorithms/InverseCongruentialMethod.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/Algorithms/InverseCongruentialMethod.cpp.s
 .PHONY : Algorithms/InverseCongruentialMethod.cpp.s
 
-Algorithms/LinialCongruentialMethod.o: Algorithms/LinialCongruentialMethod.cpp.o
-.PHONY : Algorithms/LinialCongruentialMethod.o
+Algorithms/LinealCongruentialMethod.o: Algorithms/LinealCongruentialMethod.cpp.o
+.PHONY : Algorithms/LinealCongruentialMethod.o
 
 # target to build an object file
-Algorithms/LinialCongruentialMethod.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/Algorithms/LinialCongruentialMethod.cpp.o
-.PHONY : Algorithms/LinialCongruentialMethod.cpp.o
+Algorithms/LinealCongruentialMethod.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/Algorithms/LinealCongruentialMethod.cpp.o
+.PHONY : Algorithms/LinealCongruentialMethod.cpp.o
 
-Algorithms/LinialCongruentialMethod.i: Algorithms/LinialCongruentialMethod.cpp.i
-.PHONY : Algorithms/LinialCongruentialMethod.i
+Algorithms/LinealCongruentialMethod.i: Algorithms/LinealCongruentialMethod.cpp.i
+.PHONY : Algorithms/LinealCongruentialMethod.i
 
 # target to preprocess a source file
-Algorithms/LinialCongruentialMethod.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/Algorithms/LinialCongruentialMethod.cpp.i
-.PHONY : Algorithms/LinialCongruentialMethod.cpp.i
+Algorithms/LinealCongruentialMethod.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/Algorithms/LinealCongruentialMethod.cpp.i
+.PHONY : Algorithms/LinealCongruentialMethod.cpp.i
 
-Algorithms/LinialCongruentialMethod.s: Algorithms/LinialCongruentialMethod.cpp.s
-.PHONY : Algorithms/LinialCongruentialMethod.s
+Algorithms/LinealCongruentialMethod.s: Algorithms/LinealCongruentialMethod.cpp.s
+.PHONY : Algorithms/LinealCongruentialMethod.s
 
 # target to generate assembly for a file
-Algorithms/LinialCongruentialMethod.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/Algorithms/LinialCongruentialMethod.cpp.s
-.PHONY : Algorithms/LinialCongruentialMethod.cpp.s
+Algorithms/LinealCongruentialMethod.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/Algorithms/LinealCongruentialMethod.cpp.s
+.PHONY : Algorithms/LinealCongruentialMethod.cpp.s
 
 Algorithms/QuadraticCongruentialMethod.o: Algorithms/QuadraticCongruentialMethod.cpp.o
 .PHONY : Algorithms/QuadraticCongruentialMethod.o
@@ -347,6 +347,30 @@ Algorithms/QuadraticCongruentialMethod.s: Algorithms/QuadraticCongruentialMethod
 Algorithms/QuadraticCongruentialMethod.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/Algorithms/QuadraticCongruentialMethod.cpp.s
 .PHONY : Algorithms/QuadraticCongruentialMethod.cpp.s
+
+Algorithms/Utils.o: Algorithms/Utils.cpp.o
+.PHONY : Algorithms/Utils.o
+
+# target to build an object file
+Algorithms/Utils.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/Algorithms/Utils.cpp.o
+.PHONY : Algorithms/Utils.cpp.o
+
+Algorithms/Utils.i: Algorithms/Utils.cpp.i
+.PHONY : Algorithms/Utils.i
+
+# target to preprocess a source file
+Algorithms/Utils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/Algorithms/Utils.cpp.i
+.PHONY : Algorithms/Utils.cpp.i
+
+Algorithms/Utils.s: Algorithms/Utils.cpp.s
+.PHONY : Algorithms/Utils.s
+
+# target to generate assembly for a file
+Algorithms/Utils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/Algorithms/Utils.cpp.s
+.PHONY : Algorithms/Utils.cpp.s
 
 IStrategy.o: IStrategy.cpp.o
 .PHONY : IStrategy.o
@@ -448,12 +472,15 @@ help:
 	@echo "... Algorithms/InverseCongruentialMethod.o"
 	@echo "... Algorithms/InverseCongruentialMethod.i"
 	@echo "... Algorithms/InverseCongruentialMethod.s"
-	@echo "... Algorithms/LinialCongruentialMethod.o"
-	@echo "... Algorithms/LinialCongruentialMethod.i"
-	@echo "... Algorithms/LinialCongruentialMethod.s"
+	@echo "... Algorithms/LinealCongruentialMethod.o"
+	@echo "... Algorithms/LinealCongruentialMethod.i"
+	@echo "... Algorithms/LinealCongruentialMethod.s"
 	@echo "... Algorithms/QuadraticCongruentialMethod.o"
 	@echo "... Algorithms/QuadraticCongruentialMethod.i"
 	@echo "... Algorithms/QuadraticCongruentialMethod.s"
+	@echo "... Algorithms/Utils.o"
+	@echo "... Algorithms/Utils.i"
+	@echo "... Algorithms/Utils.s"
 	@echo "... IStrategy.o"
 	@echo "... IStrategy.i"
 	@echo "... IStrategy.s"

@@ -92,18 +92,18 @@ CMakeFiles/Lab1.dir/IStrategy.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab1.dir/IStrategy.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/seaeagle/CLionProjects/Lab1/IStrategy.cpp -o CMakeFiles/Lab1.dir/IStrategy.cpp.s
 
-CMakeFiles/Lab1.dir/Algorithms/LinialCongruentialMethod.cpp.o: CMakeFiles/Lab1.dir/flags.make
-CMakeFiles/Lab1.dir/Algorithms/LinialCongruentialMethod.cpp.o: ../Algorithms/LinialCongruentialMethod.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Lab1.dir/Algorithms/LinialCongruentialMethod.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lab1.dir/Algorithms/LinialCongruentialMethod.cpp.o -c /home/seaeagle/CLionProjects/Lab1/Algorithms/LinialCongruentialMethod.cpp
+CMakeFiles/Lab1.dir/Algorithms/LinealCongruentialMethod.cpp.o: CMakeFiles/Lab1.dir/flags.make
+CMakeFiles/Lab1.dir/Algorithms/LinealCongruentialMethod.cpp.o: ../Algorithms/LinealCongruentialMethod.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Lab1.dir/Algorithms/LinealCongruentialMethod.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lab1.dir/Algorithms/LinealCongruentialMethod.cpp.o -c /home/seaeagle/CLionProjects/Lab1/Algorithms/LinealCongruentialMethod.cpp
 
-CMakeFiles/Lab1.dir/Algorithms/LinialCongruentialMethod.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lab1.dir/Algorithms/LinialCongruentialMethod.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/seaeagle/CLionProjects/Lab1/Algorithms/LinialCongruentialMethod.cpp > CMakeFiles/Lab1.dir/Algorithms/LinialCongruentialMethod.cpp.i
+CMakeFiles/Lab1.dir/Algorithms/LinealCongruentialMethod.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lab1.dir/Algorithms/LinealCongruentialMethod.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/seaeagle/CLionProjects/Lab1/Algorithms/LinealCongruentialMethod.cpp > CMakeFiles/Lab1.dir/Algorithms/LinealCongruentialMethod.cpp.i
 
-CMakeFiles/Lab1.dir/Algorithms/LinialCongruentialMethod.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab1.dir/Algorithms/LinialCongruentialMethod.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/seaeagle/CLionProjects/Lab1/Algorithms/LinialCongruentialMethod.cpp -o CMakeFiles/Lab1.dir/Algorithms/LinialCongruentialMethod.cpp.s
+CMakeFiles/Lab1.dir/Algorithms/LinealCongruentialMethod.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab1.dir/Algorithms/LinealCongruentialMethod.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/seaeagle/CLionProjects/Lab1/Algorithms/LinealCongruentialMethod.cpp -o CMakeFiles/Lab1.dir/Algorithms/LinealCongruentialMethod.cpp.s
 
 CMakeFiles/Lab1.dir/RandomGenerator.cpp.o: CMakeFiles/Lab1.dir/flags.make
 CMakeFiles/Lab1.dir/RandomGenerator.cpp.o: ../RandomGenerator.cpp
@@ -157,29 +157,44 @@ CMakeFiles/Lab1.dir/Algorithms/InverseCongruentialMethod.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab1.dir/Algorithms/InverseCongruentialMethod.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/seaeagle/CLionProjects/Lab1/Algorithms/InverseCongruentialMethod.cpp -o CMakeFiles/Lab1.dir/Algorithms/InverseCongruentialMethod.cpp.s
 
+CMakeFiles/Lab1.dir/Algorithms/Utils.cpp.o: CMakeFiles/Lab1.dir/flags.make
+CMakeFiles/Lab1.dir/Algorithms/Utils.cpp.o: ../Algorithms/Utils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Lab1.dir/Algorithms/Utils.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lab1.dir/Algorithms/Utils.cpp.o -c /home/seaeagle/CLionProjects/Lab1/Algorithms/Utils.cpp
+
+CMakeFiles/Lab1.dir/Algorithms/Utils.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lab1.dir/Algorithms/Utils.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/seaeagle/CLionProjects/Lab1/Algorithms/Utils.cpp > CMakeFiles/Lab1.dir/Algorithms/Utils.cpp.i
+
+CMakeFiles/Lab1.dir/Algorithms/Utils.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab1.dir/Algorithms/Utils.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/seaeagle/CLionProjects/Lab1/Algorithms/Utils.cpp -o CMakeFiles/Lab1.dir/Algorithms/Utils.cpp.s
+
 # Object files for target Lab1
 Lab1_OBJECTS = \
 "CMakeFiles/Lab1.dir/main.cpp.o" \
 "CMakeFiles/Lab1.dir/IStrategy.cpp.o" \
-"CMakeFiles/Lab1.dir/Algorithms/LinialCongruentialMethod.cpp.o" \
+"CMakeFiles/Lab1.dir/Algorithms/LinealCongruentialMethod.cpp.o" \
 "CMakeFiles/Lab1.dir/RandomGenerator.cpp.o" \
 "CMakeFiles/Lab1.dir/Algorithms/QuadraticCongruentialMethod.cpp.o" \
 "CMakeFiles/Lab1.dir/Algorithms/FibonacciMethod.cpp.o" \
-"CMakeFiles/Lab1.dir/Algorithms/InverseCongruentialMethod.cpp.o"
+"CMakeFiles/Lab1.dir/Algorithms/InverseCongruentialMethod.cpp.o" \
+"CMakeFiles/Lab1.dir/Algorithms/Utils.cpp.o"
 
 # External object files for target Lab1
 Lab1_EXTERNAL_OBJECTS =
 
 Lab1: CMakeFiles/Lab1.dir/main.cpp.o
 Lab1: CMakeFiles/Lab1.dir/IStrategy.cpp.o
-Lab1: CMakeFiles/Lab1.dir/Algorithms/LinialCongruentialMethod.cpp.o
+Lab1: CMakeFiles/Lab1.dir/Algorithms/LinealCongruentialMethod.cpp.o
 Lab1: CMakeFiles/Lab1.dir/RandomGenerator.cpp.o
 Lab1: CMakeFiles/Lab1.dir/Algorithms/QuadraticCongruentialMethod.cpp.o
 Lab1: CMakeFiles/Lab1.dir/Algorithms/FibonacciMethod.cpp.o
 Lab1: CMakeFiles/Lab1.dir/Algorithms/InverseCongruentialMethod.cpp.o
+Lab1: CMakeFiles/Lab1.dir/Algorithms/Utils.cpp.o
 Lab1: CMakeFiles/Lab1.dir/build.make
 Lab1: CMakeFiles/Lab1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable Lab1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable Lab1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Lab1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

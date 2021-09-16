@@ -10,8 +10,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/seaeagle/CLionProjects/Lab1/Algorithms/FibonacciMethod.cpp" "/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/CMakeFiles/Lab1.dir/Algorithms/FibonacciMethod.cpp.o"
   "/home/seaeagle/CLionProjects/Lab1/Algorithms/InverseCongruentialMethod.cpp" "/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/CMakeFiles/Lab1.dir/Algorithms/InverseCongruentialMethod.cpp.o"
-  "/home/seaeagle/CLionProjects/Lab1/Algorithms/LinialCongruentialMethod.cpp" "/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/CMakeFiles/Lab1.dir/Algorithms/LinialCongruentialMethod.cpp.o"
+  "/home/seaeagle/CLionProjects/Lab1/Algorithms/LinealCongruentialMethod.cpp" "/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/CMakeFiles/Lab1.dir/Algorithms/LinealCongruentialMethod.cpp.o"
   "/home/seaeagle/CLionProjects/Lab1/Algorithms/QuadraticCongruentialMethod.cpp" "/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/CMakeFiles/Lab1.dir/Algorithms/QuadraticCongruentialMethod.cpp.o"
+  "/home/seaeagle/CLionProjects/Lab1/Algorithms/Utils.cpp" "/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/CMakeFiles/Lab1.dir/Algorithms/Utils.cpp.o"
   "/home/seaeagle/CLionProjects/Lab1/IStrategy.cpp" "/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/CMakeFiles/Lab1.dir/IStrategy.cpp.o"
   "/home/seaeagle/CLionProjects/Lab1/RandomGenerator.cpp" "/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/CMakeFiles/Lab1.dir/RandomGenerator.cpp.o"
   "/home/seaeagle/CLionProjects/Lab1/main.cpp" "/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/CMakeFiles/Lab1.dir/main.cpp.o"

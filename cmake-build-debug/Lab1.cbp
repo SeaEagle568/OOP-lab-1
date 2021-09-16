@@ -424,10 +424,13 @@
 		<Unit filename="/home/seaeagle/CLionProjects/Lab1/Algorithms/InverseCongruentialMethod.cpp">
 			<Option target="Lab1"/>
 		</Unit>
-		<Unit filename="/home/seaeagle/CLionProjects/Lab1/Algorithms/LinialCongruentialMethod.cpp">
+		<Unit filename="/home/seaeagle/CLionProjects/Lab1/Algorithms/LinealCongruentialMethod.cpp">
 			<Option target="Lab1"/>
 		</Unit>
 		<Unit filename="/home/seaeagle/CLionProjects/Lab1/Algorithms/QuadraticCongruentialMethod.cpp">
+			<Option target="Lab1"/>
+		</Unit>
+		<Unit filename="/home/seaeagle/CLionProjects/Lab1/Algorithms/Utils.cpp">
 			<Option target="Lab1"/>
 		</Unit>
 		<Unit filename="/home/seaeagle/CLionProjects/Lab1/Google_tests/RandomGenerator_test.cpp">
@@ -459,10 +462,13 @@
 		<Unit filename="/home/seaeagle/CLionProjects/Lab1/include/Algorithms/InverseCongruentialMethod.h">
 			<Option target="Lab1"/>
 		</Unit>
-		<Unit filename="/home/seaeagle/CLionProjects/Lab1/include/Algorithms/LinialCongruentialMethod.h">
+		<Unit filename="/home/seaeagle/CLionProjects/Lab1/include/Algorithms/LinealCongruentialMethod.h">
 			<Option target="Lab1"/>
 		</Unit>
 		<Unit filename="/home/seaeagle/CLionProjects/Lab1/include/Algorithms/QuadraticCongruentialMethod.h">
+			<Option target="Lab1"/>
+		</Unit>
+		<Unit filename="/home/seaeagle/CLionProjects/Lab1/include/Algorithms/Utils.h">
 			<Option target="Lab1"/>
 		</Unit>
 		<Unit filename="/home/seaeagle/CLionProjects/Lab1/include/IStrategy.h">

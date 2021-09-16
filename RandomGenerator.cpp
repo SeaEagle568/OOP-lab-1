@@ -25,6 +25,7 @@ RandomGenerator::getDistribution(double lower, double upper, double step, int it
 
 vector<double> RandomGenerator::generateValues(double lower, double upper, int n) {
     vector<double> generatedValues;
+    generatedValues.reserve(n);
     for (int i = 0; i < n; i++) {
         generatedValues.push_back(strategy->nextNumber(lower, upper));
     }
@@ -42,7 +43,7 @@ void RandomGenerator::addLore(vector<pair<string, string>> &list, double lower, 
         list.emplace_back(lore, "");
     }
 
-    for (auto &it : list) {
+    for (auto &it: list) {
         for (size_t i = it.first.size(); i < maxLength; i++) {
             it.first += " ";
         }
@@ -61,9 +62,10 @@ void RandomGenerator::addValues(vector<pair<string, string>> &list, vector<doubl
     }
     for (auto it: countList) {
         int index = (int) ((it.first - lower) / step);
+        if (index >= list.size()) index = (int) (list.size() - 1);
         temp[index] += (double) it.second / (double) values.size();
     }
-    for (auto it : temp) {
+    for (auto it: temp) {
         list[it.first].second = removeZeros(to_string(it.second));
     }
 }
