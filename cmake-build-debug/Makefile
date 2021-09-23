@@ -348,6 +348,54 @@ Algorithms/QuadraticCongruentialMethod.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/Algorithms/QuadraticCongruentialMethod.cpp.s
 .PHONY : Algorithms/QuadraticCongruentialMethod.cpp.s
 
+Algorithms/ThreeSigmaMethod.o: Algorithms/ThreeSigmaMethod.cpp.o
+.PHONY : Algorithms/ThreeSigmaMethod.o
+
+# target to build an object file
+Algorithms/ThreeSigmaMethod.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/Algorithms/ThreeSigmaMethod.cpp.o
+.PHONY : Algorithms/ThreeSigmaMethod.cpp.o
+
+Algorithms/ThreeSigmaMethod.i: Algorithms/ThreeSigmaMethod.cpp.i
+.PHONY : Algorithms/ThreeSigmaMethod.i
+
+# target to preprocess a source file
+Algorithms/ThreeSigmaMethod.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/Algorithms/ThreeSigmaMethod.cpp.i
+.PHONY : Algorithms/ThreeSigmaMethod.cpp.i
+
+Algorithms/ThreeSigmaMethod.s: Algorithms/ThreeSigmaMethod.cpp.s
+.PHONY : Algorithms/ThreeSigmaMethod.s
+
+# target to generate assembly for a file
+Algorithms/ThreeSigmaMethod.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/Algorithms/ThreeSigmaMethod.cpp.s
+.PHONY : Algorithms/ThreeSigmaMethod.cpp.s
+
+Algorithms/UnityMethod.o: Algorithms/UnityMethod.cpp.o
+.PHONY : Algorithms/UnityMethod.o
+
+# target to build an object file
+Algorithms/UnityMethod.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/Algorithms/UnityMethod.cpp.o
+.PHONY : Algorithms/UnityMethod.cpp.o
+
+Algorithms/UnityMethod.i: Algorithms/UnityMethod.cpp.i
+.PHONY : Algorithms/UnityMethod.i
+
+# target to preprocess a source file
+Algorithms/UnityMethod.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/Algorithms/UnityMethod.cpp.i
+.PHONY : Algorithms/UnityMethod.cpp.i
+
+Algorithms/UnityMethod.s: Algorithms/UnityMethod.cpp.s
+.PHONY : Algorithms/UnityMethod.s
+
+# target to generate assembly for a file
+Algorithms/UnityMethod.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/Algorithms/UnityMethod.cpp.s
+.PHONY : Algorithms/UnityMethod.cpp.s
+
 Algorithms/Utils.o: Algorithms/Utils.cpp.o
 .PHONY : Algorithms/Utils.o
 
@@ -478,6 +526,12 @@ help:
 	@echo "... Algorithms/QuadraticCongruentialMethod.o"
 	@echo "... Algorithms/QuadraticCongruentialMethod.i"
 	@echo "... Algorithms/QuadraticCongruentialMethod.s"
+	@echo "... Algorithms/ThreeSigmaMethod.o"
+	@echo "... Algorithms/ThreeSigmaMethod.i"
+	@echo "... Algorithms/ThreeSigmaMethod.s"
+	@echo "... Algorithms/UnityMethod.o"
+	@echo "... Algorithms/UnityMethod.i"
+	@echo "... Algorithms/UnityMethod.s"
 	@echo "... Algorithms/Utils.o"
 	@echo "... Algorithms/Utils.i"
 	@echo "... Algorithms/Utils.s"

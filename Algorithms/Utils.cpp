@@ -47,3 +47,12 @@ ll Utils::phi(ll n) {
     return result;
 }
 
+ll Utils::mmod(long long int x, long long int m) {
+    return ((x % m) + m) % m;
+}
+
+ll Utils::modmin(long long int x, long long int y, long long int m) {
+    return mmod(mmod(x, m) - mmod(y, m), m);
+}
+
+

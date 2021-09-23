@@ -4,14 +4,10 @@
 
 #include "../include/Algorithms/LinealCongruentialMethod.h"
 
-double LinealCongruentialMethod::nextNumber() {
-    int nextInt = static_cast<int>(((a * previous) % m + c) % m);
-    previous = nextInt;
-    return static_cast<double>(nextInt) / static_cast<double>(m - 1);
-}
 
 
 LinealCongruentialMethod::LinealCongruentialMethod(int seed, bool printInfo, bool useDefaults) {
+    this->name = __func__;
     this->previous = seed;
     if (printInfo) {
         this->printInfo(seed, useDefaults);
@@ -32,6 +28,8 @@ void LinealCongruentialMethod::printInfo(int seed, bool useDefaults) {
             cin >> this->a;
             cout << "Please enter C constant: " << endl;
             cin >> this->c;
+            cout << "Please enter seed (initial value): " << endl;
+            cin >> this->previous;
             bool ok = true;
             if (__gcd(m, c) != 1) {
                 cout << "M and C should be coprime" << endl;
@@ -73,6 +71,24 @@ void LinealCongruentialMethod::printInfo(int seed, bool useDefaults) {
     else {
         cout << "Using default recommended constants..." << endl;
     }
+}
+
+int LinealCongruentialMethod::nextInt() {
+    int ans = static_cast<int>(((a * previous) % m + c) % m);
+    updatePrev(ans);
+    return ans;
+}
+
+void LinealCongruentialMethod::updatePrev(int newNumber) {
+    previous = nextInt();
+}
+
+int LinealCongruentialMethod::getM() {
+    return this->m;
+}
+
+string LinealCongruentialMethod::getName() {
+    return name;
 }
 
 

@@ -4,11 +4,6 @@
 
 #include "../include/Algorithms/InverseCongruentialMethod.h"
 
-double InverseCongruentialMethod::nextNumber() {
-    int nextInt = static_cast<int>(((a * Utils::binpow(previous, inv_coef-1, m)) % m + c) % m);
-    previous = nextInt;
-    return static_cast<double>(nextInt) / static_cast<double>(m - 1);
-}
 
 void InverseCongruentialMethod::printInfo(int seed, bool useDefaults) {
     cout << "You chose InverseCongruentialMethod with seed: " << seed << endl;
@@ -24,6 +19,8 @@ void InverseCongruentialMethod::printInfo(int seed, bool useDefaults) {
             cin >> this->a;
             cout << "Please enter C constant: " << endl;
             cin >> this->c;
+            cout << "Please enter seed (initial value): " << endl;
+            cin >> this->previous;
             bool ok = true;
 
             if (Utils::phi(m) != m-1) {
@@ -55,10 +52,29 @@ void InverseCongruentialMethod::printInfo(int seed, bool useDefaults) {
 
 
 InverseCongruentialMethod::InverseCongruentialMethod(int seed, bool printInfo, bool useDefaults) {
+    this->name = __func__;
     previous = seed;
     if (printInfo) {
         this->printInfo(seed, useDefaults);
     }
     inv_coef = Utils::phi(m);
+}
+
+int InverseCongruentialMethod::nextInt() {
+    int ans = static_cast<int>(((a * Utils::binpow(previous, inv_coef-1, m)) % m + c) % m);
+    updatePrev(ans);
+    return ans;
+}
+
+void InverseCongruentialMethod::updatePrev(int newNumber) {
+    previous = newNumber;
+}
+
+int InverseCongruentialMethod::getM() {
+    return this->m;
+}
+
+string InverseCongruentialMethod::getName() {
+    return name;
 }
 

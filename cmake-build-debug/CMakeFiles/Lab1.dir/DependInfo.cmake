@@ -12,6 +12,8 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/seaeagle/CLionProjects/Lab1/Algorithms/InverseCongruentialMethod.cpp" "/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/CMakeFiles/Lab1.dir/Algorithms/InverseCongruentialMethod.cpp.o"
   "/home/seaeagle/CLionProjects/Lab1/Algorithms/LinealCongruentialMethod.cpp" "/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/CMakeFiles/Lab1.dir/Algorithms/LinealCongruentialMethod.cpp.o"
   "/home/seaeagle/CLionProjects/Lab1/Algorithms/QuadraticCongruentialMethod.cpp" "/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/CMakeFiles/Lab1.dir/Algorithms/QuadraticCongruentialMethod.cpp.o"
+  "/home/seaeagle/CLionProjects/Lab1/Algorithms/ThreeSigmaMethod.cpp" "/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/CMakeFiles/Lab1.dir/Algorithms/ThreeSigmaMethod.cpp.o"
+  "/home/seaeagle/CLionProjects/Lab1/Algorithms/UnityMethod.cpp" "/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/CMakeFiles/Lab1.dir/Algorithms/UnityMethod.cpp.o"
   "/home/seaeagle/CLionProjects/Lab1/Algorithms/Utils.cpp" "/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/CMakeFiles/Lab1.dir/Algorithms/Utils.cpp.o"
   "/home/seaeagle/CLionProjects/Lab1/IStrategy.cpp" "/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/CMakeFiles/Lab1.dir/IStrategy.cpp.o"
   "/home/seaeagle/CLionProjects/Lab1/RandomGenerator.cpp" "/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/CMakeFiles/Lab1.dir/RandomGenerator.cpp.o"

@@ -430,6 +430,12 @@
 		<Unit filename="/home/seaeagle/CLionProjects/Lab1/Algorithms/QuadraticCongruentialMethod.cpp">
 			<Option target="Lab1"/>
 		</Unit>
+		<Unit filename="/home/seaeagle/CLionProjects/Lab1/Algorithms/ThreeSigmaMethod.cpp">
+			<Option target="Lab1"/>
+		</Unit>
+		<Unit filename="/home/seaeagle/CLionProjects/Lab1/Algorithms/UnityMethod.cpp">
+			<Option target="Lab1"/>
+		</Unit>
 		<Unit filename="/home/seaeagle/CLionProjects/Lab1/Algorithms/Utils.cpp">
 			<Option target="Lab1"/>
 		</Unit>
@@ -468,7 +474,16 @@
 		<Unit filename="/home/seaeagle/CLionProjects/Lab1/include/Algorithms/QuadraticCongruentialMethod.h">
 			<Option target="Lab1"/>
 		</Unit>
+		<Unit filename="/home/seaeagle/CLionProjects/Lab1/include/Algorithms/ThreeSigmaMethod.h">
+			<Option target="Lab1"/>
+		</Unit>
+		<Unit filename="/home/seaeagle/CLionProjects/Lab1/include/Algorithms/UnityMethod.h">
+			<Option target="Lab1"/>
+		</Unit>
 		<Unit filename="/home/seaeagle/CLionProjects/Lab1/include/Algorithms/Utils.h">
+			<Option target="Lab1"/>
+		</Unit>
+		<Unit filename="/home/seaeagle/CLionProjects/Lab1/include/Algorithms/algorithms.h">
 			<Option target="Lab1"/>
 		</Unit>
 		<Unit filename="/home/seaeagle/CLionProjects/Lab1/include/IStrategy.h">

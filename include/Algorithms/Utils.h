@@ -13,6 +13,8 @@ public:
     static vector<ll> factorize(ll n);
     static ll binpow(ll base, ll n, ll mod);
     static ll phi(ll n);
+    static ll mmod(ll x, ll m);
+    static ll modmin(ll x, ll y, ll m);
 };
 
 

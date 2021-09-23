@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Lab1.dir/Algorithms/InverseCongruentialMethod.cpp.o"
   "CMakeFiles/Lab1.dir/Algorithms/LinealCongruentialMethod.cpp.o"
   "CMakeFiles/Lab1.dir/Algorithms/QuadraticCongruentialMethod.cpp.o"
+  "CMakeFiles/Lab1.dir/Algorithms/ThreeSigmaMethod.cpp.o"
+  "CMakeFiles/Lab1.dir/Algorithms/UnityMethod.cpp.o"
   "CMakeFiles/Lab1.dir/Algorithms/Utils.cpp.o"
   "CMakeFiles/Lab1.dir/IStrategy.cpp.o"
   "CMakeFiles/Lab1.dir/RandomGenerator.cpp.o"

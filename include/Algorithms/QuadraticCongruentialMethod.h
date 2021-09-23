@@ -9,23 +9,30 @@
 #include "../IStrategy.h"
 #include<bits/stdc++.h>
 #include "Utils.h"
+
 using namespace std;
 
 class QuadraticCongruentialMethod : public IStrategy {
 public:
-    //double nextNumber(double lower, double upper) override;
-
-    double nextNumber() override;
+    int nextInt() override;
 
     explicit QuadraticCongruentialMethod(int seed, bool printInfo, bool useDefaults);
 
+    string getName() override;
 private:
     long long m = (1ll << 31) - 1;
     long long a = 2147483629;
     long long c = 2147483587;
     long long d = 2147483628;
     long long previous;
+    string name;
     void printInfo(int seed, bool useDefaults);
+
+    void updatePrev(int newNumber) override;
+
+    int getM() override;
+
+
 };
 
 

@@ -5,13 +5,8 @@
 #include "../include/Algorithms/QuadraticCongruentialMethod.h"
 
 
-double QuadraticCongruentialMethod::nextNumber() {
-    int nextInt = static_cast<int>(((d * ((previous * previous) % m)) % m + (a * previous) % m + c) % m);
-    previous = nextInt;
-    return static_cast<double>(nextInt) / static_cast<double>(m - 1);
-}
-
 QuadraticCongruentialMethod::QuadraticCongruentialMethod(int seed, bool printInfo, bool useDefaults) {
+    this->name = __func__;
     this->previous = seed;
     if (printInfo) {
         this -> printInfo(seed, useDefaults);
@@ -35,7 +30,8 @@ void QuadraticCongruentialMethod::printInfo(int seed, bool useDefaults) {
             cin >> this->a;
             cout << "Please enter C constant: " << endl;
             cin >> this->c;
-
+            cout << "Please enter seed (initial value): " << endl;
+            cin >> this->previous;
             bool ok = true;
             if (__gcd(m, c) != 1) {
                 cout << "M and C should be coprime" << endl;
@@ -89,4 +85,22 @@ void QuadraticCongruentialMethod::printInfo(int seed, bool useDefaults) {
     else {
         cout << "Using default recommended constants..." << endl;
     }
+}
+
+int QuadraticCongruentialMethod::nextInt() {
+    int ans = static_cast<int>(((d * ((previous * previous) % m)) % m + (a * previous) % m + c) % m);
+    updatePrev(ans);
+    return ans;
+}
+
+void QuadraticCongruentialMethod::updatePrev(int newNumber) {
+    previous = newNumber;
+}
+
+int QuadraticCongruentialMethod::getM() {
+    return this->m;
+}
+
+string QuadraticCongruentialMethod::getName() {
+    return name;
 }

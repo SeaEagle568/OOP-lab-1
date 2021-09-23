@@ -5,14 +5,8 @@
 #include "../include/Algorithms/FibonacciMethod.h"
 
 
-double FibonacciMethod::nextNumber() {
-    int nextInt = static_cast<int>((previous + subprevious) % m);
-    subprevious = previous;
-    previous = nextInt;
-    return static_cast<double>(nextInt) / static_cast<double>(m - 1);
-}
-
 FibonacciMethod::FibonacciMethod(int seed1, int seed2, bool printInfo, bool useDefaults) {
+    this->name = __func__;
     previous = seed1;
     subprevious = seed2;
     if (printInfo) {
@@ -28,6 +22,10 @@ void FibonacciMethod::printInfo(int seed1, int seed2, bool useDefaults) {
         while (true) {
             cout << "Please enter module constant: " << endl;
             cin >> this->m;
+            cout << "Please enter seed 1 (initial value): " << endl;
+            cin >> this->subprevious;
+            cout << "Please enter seed 2 (initial value): " << endl;
+            cin >> this->previous;
             if (m > 0) break;
             cout << "M should be > 0" << endl << endl << "Please try again..." << endl;
         }
@@ -35,5 +33,24 @@ void FibonacciMethod::printInfo(int seed1, int seed2, bool useDefaults) {
     else {
         cout << "Using default recommended constants..." << endl;
     }
+}
+
+int FibonacciMethod::nextInt() {
+    int ans = static_cast<int>((previous + subprevious) % m);
+    updatePrev(ans);
+    return ans;
+}
+
+void FibonacciMethod::updatePrev(int newNumber) {
+    subprevious = previous;
+    previous = newNumber;
+}
+
+int FibonacciMethod::getM() {
+    return this->m;
+}
+
+string FibonacciMethod::getName() {
+    return name;
 }
 
