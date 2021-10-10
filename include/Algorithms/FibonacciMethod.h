@@ -7,11 +7,12 @@
 
 
 #include "../IStrategy.h"
+#include "../IUniformStrategy.h"
 #include<bits/stdc++.h>
 
 using namespace std;
 
-class FibonacciMethod : public IStrategy {
+class FibonacciMethod : public IUniformStrategy{
 public:
     explicit FibonacciMethod(int seed1, int seed2, bool printInfo, bool useDefaults);
 

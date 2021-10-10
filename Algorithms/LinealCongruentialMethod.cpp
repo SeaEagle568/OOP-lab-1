@@ -80,7 +80,7 @@ int LinealCongruentialMethod::nextInt() {
 }
 
 void LinealCongruentialMethod::updatePrev(int newNumber) {
-    previous = nextInt();
+    previous = newNumber;
 }
 
 int LinealCongruentialMethod::getM() {

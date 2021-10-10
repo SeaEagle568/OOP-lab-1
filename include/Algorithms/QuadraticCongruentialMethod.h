@@ -9,10 +9,11 @@
 #include "../IStrategy.h"
 #include<bits/stdc++.h>
 #include "Utils.h"
+#include "../IUniformStrategy.h"
 
 using namespace std;
 
-class QuadraticCongruentialMethod : public IStrategy {
+class QuadraticCongruentialMethod : public IUniformStrategy{
 public:
     int nextInt() override;
 

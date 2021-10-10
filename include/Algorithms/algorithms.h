@@ -9,4 +9,9 @@
 #include "LinealCongruentialMethod.h"
 #include "QuadraticCongruentialMethod.h"
 #include "UnityMethod.h"
+#include "ThreeSigmaMethod.h"
+#include "PolarCoordintesMethod.h"
+#include "LogarithmExponentialMethod.h"
+#include "CorrelationMethod.h"
+#include "AhrensGammaMethod.h"
 #endif //LAB1_ALGORITHMS_H

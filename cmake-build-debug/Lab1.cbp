@@ -418,6 +418,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/seaeagle/CLionProjects/Lab1/Algorithms/AhrensGammaMethod.cpp">
+			<Option target="Lab1"/>
+		</Unit>
+		<Unit filename="/home/seaeagle/CLionProjects/Lab1/Algorithms/CorrelationMethod.cpp">
+			<Option target="Lab1"/>
+		</Unit>
 		<Unit filename="/home/seaeagle/CLionProjects/Lab1/Algorithms/FibonacciMethod.cpp">
 			<Option target="Lab1"/>
 		</Unit>
@@ -425,6 +431,12 @@
 			<Option target="Lab1"/>
 		</Unit>
 		<Unit filename="/home/seaeagle/CLionProjects/Lab1/Algorithms/LinealCongruentialMethod.cpp">
+			<Option target="Lab1"/>
+		</Unit>
+		<Unit filename="/home/seaeagle/CLionProjects/Lab1/Algorithms/LogarithmExponentialMethod.cpp">
+			<Option target="Lab1"/>
+		</Unit>
+		<Unit filename="/home/seaeagle/CLionProjects/Lab1/Algorithms/PolarCoordintesMethod.cpp">
 			<Option target="Lab1"/>
 		</Unit>
 		<Unit filename="/home/seaeagle/CLionProjects/Lab1/Algorithms/QuadraticCongruentialMethod.cpp">
@@ -457,10 +469,19 @@
 		<Unit filename="/home/seaeagle/CLionProjects/Lab1/IStrategy.cpp">
 			<Option target="Lab1"/>
 		</Unit>
+		<Unit filename="/home/seaeagle/CLionProjects/Lab1/IUniformStrategy.cpp">
+			<Option target="Lab1"/>
+		</Unit>
 		<Unit filename="/home/seaeagle/CLionProjects/Lab1/RandomGenerator.cpp">
 			<Option target="random"/>
 			<Option target="Lab1"/>
 			<Option target="Google_Tests_run"/>
+		</Unit>
+		<Unit filename="/home/seaeagle/CLionProjects/Lab1/include/Algorithms/AhrensGammaMethod.h">
+			<Option target="Lab1"/>
+		</Unit>
+		<Unit filename="/home/seaeagle/CLionProjects/Lab1/include/Algorithms/CorrelationMethod.h">
+			<Option target="Lab1"/>
 		</Unit>
 		<Unit filename="/home/seaeagle/CLionProjects/Lab1/include/Algorithms/FibonacciMethod.h">
 			<Option target="Lab1"/>
@@ -469,6 +490,12 @@
 			<Option target="Lab1"/>
 		</Unit>
 		<Unit filename="/home/seaeagle/CLionProjects/Lab1/include/Algorithms/LinealCongruentialMethod.h">
+			<Option target="Lab1"/>
+		</Unit>
+		<Unit filename="/home/seaeagle/CLionProjects/Lab1/include/Algorithms/LogarithmExponentialMethod.h">
+			<Option target="Lab1"/>
+		</Unit>
+		<Unit filename="/home/seaeagle/CLionProjects/Lab1/include/Algorithms/PolarCoordintesMethod.h">
 			<Option target="Lab1"/>
 		</Unit>
 		<Unit filename="/home/seaeagle/CLionProjects/Lab1/include/Algorithms/QuadraticCongruentialMethod.h">
@@ -487,6 +514,9 @@
 			<Option target="Lab1"/>
 		</Unit>
 		<Unit filename="/home/seaeagle/CLionProjects/Lab1/include/IStrategy.h">
+			<Option target="Lab1"/>
+		</Unit>
+		<Unit filename="/home/seaeagle/CLionProjects/Lab1/include/IUniformStrategy.h">
 			<Option target="Lab1"/>
 		</Unit>
 		<Unit filename="/home/seaeagle/CLionProjects/Lab1/include/RandomGenerator.h">

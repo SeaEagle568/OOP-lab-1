@@ -44,10 +44,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/seaeagle/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/212.5080.54/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/seaeagle/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/212.5284.51/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/seaeagle/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/212.5080.54/bin/cmake/linux/bin/cmake -E rm -f
+RM = /home/seaeagle/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/212.5284.51/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -196,6 +196,71 @@ CMakeFiles/Lab1.dir/Algorithms/ThreeSigmaMethod.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab1.dir/Algorithms/ThreeSigmaMethod.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/seaeagle/CLionProjects/Lab1/Algorithms/ThreeSigmaMethod.cpp -o CMakeFiles/Lab1.dir/Algorithms/ThreeSigmaMethod.cpp.s
 
+CMakeFiles/Lab1.dir/IUniformStrategy.cpp.o: CMakeFiles/Lab1.dir/flags.make
+CMakeFiles/Lab1.dir/IUniformStrategy.cpp.o: ../IUniformStrategy.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Lab1.dir/IUniformStrategy.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lab1.dir/IUniformStrategy.cpp.o -c /home/seaeagle/CLionProjects/Lab1/IUniformStrategy.cpp
+
+CMakeFiles/Lab1.dir/IUniformStrategy.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lab1.dir/IUniformStrategy.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/seaeagle/CLionProjects/Lab1/IUniformStrategy.cpp > CMakeFiles/Lab1.dir/IUniformStrategy.cpp.i
+
+CMakeFiles/Lab1.dir/IUniformStrategy.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab1.dir/IUniformStrategy.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/seaeagle/CLionProjects/Lab1/IUniformStrategy.cpp -o CMakeFiles/Lab1.dir/IUniformStrategy.cpp.s
+
+CMakeFiles/Lab1.dir/Algorithms/PolarCoordintesMethod.cpp.o: CMakeFiles/Lab1.dir/flags.make
+CMakeFiles/Lab1.dir/Algorithms/PolarCoordintesMethod.cpp.o: ../Algorithms/PolarCoordintesMethod.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Lab1.dir/Algorithms/PolarCoordintesMethod.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lab1.dir/Algorithms/PolarCoordintesMethod.cpp.o -c /home/seaeagle/CLionProjects/Lab1/Algorithms/PolarCoordintesMethod.cpp
+
+CMakeFiles/Lab1.dir/Algorithms/PolarCoordintesMethod.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lab1.dir/Algorithms/PolarCoordintesMethod.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/seaeagle/CLionProjects/Lab1/Algorithms/PolarCoordintesMethod.cpp > CMakeFiles/Lab1.dir/Algorithms/PolarCoordintesMethod.cpp.i
+
+CMakeFiles/Lab1.dir/Algorithms/PolarCoordintesMethod.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab1.dir/Algorithms/PolarCoordintesMethod.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/seaeagle/CLionProjects/Lab1/Algorithms/PolarCoordintesMethod.cpp -o CMakeFiles/Lab1.dir/Algorithms/PolarCoordintesMethod.cpp.s
+
+CMakeFiles/Lab1.dir/Algorithms/LogarithmExponentialMethod.cpp.o: CMakeFiles/Lab1.dir/flags.make
+CMakeFiles/Lab1.dir/Algorithms/LogarithmExponentialMethod.cpp.o: ../Algorithms/LogarithmExponentialMethod.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Lab1.dir/Algorithms/LogarithmExponentialMethod.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lab1.dir/Algorithms/LogarithmExponentialMethod.cpp.o -c /home/seaeagle/CLionProjects/Lab1/Algorithms/LogarithmExponentialMethod.cpp
+
+CMakeFiles/Lab1.dir/Algorithms/LogarithmExponentialMethod.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lab1.dir/Algorithms/LogarithmExponentialMethod.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/seaeagle/CLionProjects/Lab1/Algorithms/LogarithmExponentialMethod.cpp > CMakeFiles/Lab1.dir/Algorithms/LogarithmExponentialMethod.cpp.i
+
+CMakeFiles/Lab1.dir/Algorithms/LogarithmExponentialMethod.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab1.dir/Algorithms/LogarithmExponentialMethod.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/seaeagle/CLionProjects/Lab1/Algorithms/LogarithmExponentialMethod.cpp -o CMakeFiles/Lab1.dir/Algorithms/LogarithmExponentialMethod.cpp.s
+
+CMakeFiles/Lab1.dir/Algorithms/CorrelationMethod.cpp.o: CMakeFiles/Lab1.dir/flags.make
+CMakeFiles/Lab1.dir/Algorithms/CorrelationMethod.cpp.o: ../Algorithms/CorrelationMethod.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Lab1.dir/Algorithms/CorrelationMethod.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lab1.dir/Algorithms/CorrelationMethod.cpp.o -c /home/seaeagle/CLionProjects/Lab1/Algorithms/CorrelationMethod.cpp
+
+CMakeFiles/Lab1.dir/Algorithms/CorrelationMethod.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lab1.dir/Algorithms/CorrelationMethod.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/seaeagle/CLionProjects/Lab1/Algorithms/CorrelationMethod.cpp > CMakeFiles/Lab1.dir/Algorithms/CorrelationMethod.cpp.i
+
+CMakeFiles/Lab1.dir/Algorithms/CorrelationMethod.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab1.dir/Algorithms/CorrelationMethod.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/seaeagle/CLionProjects/Lab1/Algorithms/CorrelationMethod.cpp -o CMakeFiles/Lab1.dir/Algorithms/CorrelationMethod.cpp.s
+
+CMakeFiles/Lab1.dir/Algorithms/AhrensGammaMethod.cpp.o: CMakeFiles/Lab1.dir/flags.make
+CMakeFiles/Lab1.dir/Algorithms/AhrensGammaMethod.cpp.o: ../Algorithms/AhrensGammaMethod.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Lab1.dir/Algorithms/AhrensGammaMethod.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lab1.dir/Algorithms/AhrensGammaMethod.cpp.o -c /home/seaeagle/CLionProjects/Lab1/Algorithms/AhrensGammaMethod.cpp
+
+CMakeFiles/Lab1.dir/Algorithms/AhrensGammaMethod.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lab1.dir/Algorithms/AhrensGammaMethod.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/seaeagle/CLionProjects/Lab1/Algorithms/AhrensGammaMethod.cpp > CMakeFiles/Lab1.dir/Algorithms/AhrensGammaMethod.cpp.i
+
+CMakeFiles/Lab1.dir/Algorithms/AhrensGammaMethod.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab1.dir/Algorithms/AhrensGammaMethod.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/seaeagle/CLionProjects/Lab1/Algorithms/AhrensGammaMethod.cpp -o CMakeFiles/Lab1.dir/Algorithms/AhrensGammaMethod.cpp.s
+
 # Object files for target Lab1
 Lab1_OBJECTS = \
 "CMakeFiles/Lab1.dir/main.cpp.o" \
@@ -207,7 +272,12 @@ Lab1_OBJECTS = \
 "CMakeFiles/Lab1.dir/Algorithms/InverseCongruentialMethod.cpp.o" \
 "CMakeFiles/Lab1.dir/Algorithms/Utils.cpp.o" \
 "CMakeFiles/Lab1.dir/Algorithms/UnityMethod.cpp.o" \
-"CMakeFiles/Lab1.dir/Algorithms/ThreeSigmaMethod.cpp.o"
+"CMakeFiles/Lab1.dir/Algorithms/ThreeSigmaMethod.cpp.o" \
+"CMakeFiles/Lab1.dir/IUniformStrategy.cpp.o" \
+"CMakeFiles/Lab1.dir/Algorithms/PolarCoordintesMethod.cpp.o" \
+"CMakeFiles/Lab1.dir/Algorithms/LogarithmExponentialMethod.cpp.o" \
+"CMakeFiles/Lab1.dir/Algorithms/CorrelationMethod.cpp.o" \
+"CMakeFiles/Lab1.dir/Algorithms/AhrensGammaMethod.cpp.o"
 
 # External object files for target Lab1
 Lab1_EXTERNAL_OBJECTS =
@@ -222,9 +292,14 @@ Lab1: CMakeFiles/Lab1.dir/Algorithms/InverseCongruentialMethod.cpp.o
 Lab1: CMakeFiles/Lab1.dir/Algorithms/Utils.cpp.o
 Lab1: CMakeFiles/Lab1.dir/Algorithms/UnityMethod.cpp.o
 Lab1: CMakeFiles/Lab1.dir/Algorithms/ThreeSigmaMethod.cpp.o
+Lab1: CMakeFiles/Lab1.dir/IUniformStrategy.cpp.o
+Lab1: CMakeFiles/Lab1.dir/Algorithms/PolarCoordintesMethod.cpp.o
+Lab1: CMakeFiles/Lab1.dir/Algorithms/LogarithmExponentialMethod.cpp.o
+Lab1: CMakeFiles/Lab1.dir/Algorithms/CorrelationMethod.cpp.o
+Lab1: CMakeFiles/Lab1.dir/Algorithms/AhrensGammaMethod.cpp.o
 Lab1: CMakeFiles/Lab1.dir/build.make
 Lab1: CMakeFiles/Lab1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable Lab1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/seaeagle/CLionProjects/Lab1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable Lab1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Lab1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -67,6 +67,7 @@ void RandomGenerator::addValues(vector<pair<string, string>> &list, vector<doubl
     }
     for (auto it: temp) {
         list[it.first].second = removeZeros(to_string(it.second));
+        //if (list[it.first].second.empty()) list[it.first].second = "0";
     }
 }
 

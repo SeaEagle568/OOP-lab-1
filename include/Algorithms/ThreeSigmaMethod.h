@@ -6,8 +6,22 @@
 #define LAB1_THREESIGMAMETHOD_H
 
 
-class ThreeSigmaMethod {
+#include "../IStrategy.h"
+#include "Utils.h"
+#include "../IUniformStrategy.h"
+#include<bits/stdc++.h>
 
+using namespace std;
+
+
+class ThreeSigmaMethod : public IStrategy {
+public:
+    explicit ThreeSigmaMethod(IUniformStrategy *X, bool printInfo, bool useDefaults);
+    double nextNumber() override;
+    double nextNumber(double lower, double upper) override;
+private:
+    IUniformStrategy *X;
+    void printInfo(bool useDefaults);
 };
 
 

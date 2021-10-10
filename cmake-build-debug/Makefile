@@ -48,10 +48,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/seaeagle/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/212.5080.54/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/seaeagle/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/212.5284.51/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/seaeagle/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/212.5080.54/bin/cmake/linux/bin/cmake -E rm -f
+RM = /home/seaeagle/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/212.5284.51/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -68,37 +68,37 @@ CMAKE_BINARY_DIR = /home/seaeagle/CLionProjects/Lab1/cmake-build-debug
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/home/seaeagle/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/212.5080.54/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/home/seaeagle/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/212.5284.51/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/home/seaeagle/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/212.5080.54/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/home/seaeagle/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/212.5284.51/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/home/seaeagle/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/212.5080.54/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/home/seaeagle/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/212.5284.51/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/home/seaeagle/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/212.5080.54/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/home/seaeagle/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/212.5284.51/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/seaeagle/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/212.5080.54/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+	/home/seaeagle/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/212.5284.51/bin/cmake/linux/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/seaeagle/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/212.5080.54/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+	/home/seaeagle/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/212.5284.51/bin/cmake/linux/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target list_install_components
@@ -113,7 +113,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/seaeagle/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/212.5080.54/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/seaeagle/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/212.5284.51/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -123,7 +123,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/seaeagle/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/212.5080.54/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/seaeagle/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/212.5284.51/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -252,6 +252,54 @@ gtest/fast:
 	$(MAKE) $(MAKESILENT) -f Google_tests/lib/googletest/CMakeFiles/gtest.dir/build.make Google_tests/lib/googletest/CMakeFiles/gtest.dir/build
 .PHONY : gtest/fast
 
+Algorithms/AhrensGammaMethod.o: Algorithms/AhrensGammaMethod.cpp.o
+.PHONY : Algorithms/AhrensGammaMethod.o
+
+# target to build an object file
+Algorithms/AhrensGammaMethod.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/Algorithms/AhrensGammaMethod.cpp.o
+.PHONY : Algorithms/AhrensGammaMethod.cpp.o
+
+Algorithms/AhrensGammaMethod.i: Algorithms/AhrensGammaMethod.cpp.i
+.PHONY : Algorithms/AhrensGammaMethod.i
+
+# target to preprocess a source file
+Algorithms/AhrensGammaMethod.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/Algorithms/AhrensGammaMethod.cpp.i
+.PHONY : Algorithms/AhrensGammaMethod.cpp.i
+
+Algorithms/AhrensGammaMethod.s: Algorithms/AhrensGammaMethod.cpp.s
+.PHONY : Algorithms/AhrensGammaMethod.s
+
+# target to generate assembly for a file
+Algorithms/AhrensGammaMethod.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/Algorithms/AhrensGammaMethod.cpp.s
+.PHONY : Algorithms/AhrensGammaMethod.cpp.s
+
+Algorithms/CorrelationMethod.o: Algorithms/CorrelationMethod.cpp.o
+.PHONY : Algorithms/CorrelationMethod.o
+
+# target to build an object file
+Algorithms/CorrelationMethod.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/Algorithms/CorrelationMethod.cpp.o
+.PHONY : Algorithms/CorrelationMethod.cpp.o
+
+Algorithms/CorrelationMethod.i: Algorithms/CorrelationMethod.cpp.i
+.PHONY : Algorithms/CorrelationMethod.i
+
+# target to preprocess a source file
+Algorithms/CorrelationMethod.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/Algorithms/CorrelationMethod.cpp.i
+.PHONY : Algorithms/CorrelationMethod.cpp.i
+
+Algorithms/CorrelationMethod.s: Algorithms/CorrelationMethod.cpp.s
+.PHONY : Algorithms/CorrelationMethod.s
+
+# target to generate assembly for a file
+Algorithms/CorrelationMethod.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/Algorithms/CorrelationMethod.cpp.s
+.PHONY : Algorithms/CorrelationMethod.cpp.s
+
 Algorithms/FibonacciMethod.o: Algorithms/FibonacciMethod.cpp.o
 .PHONY : Algorithms/FibonacciMethod.o
 
@@ -323,6 +371,54 @@ Algorithms/LinealCongruentialMethod.s: Algorithms/LinealCongruentialMethod.cpp.s
 Algorithms/LinealCongruentialMethod.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/Algorithms/LinealCongruentialMethod.cpp.s
 .PHONY : Algorithms/LinealCongruentialMethod.cpp.s
+
+Algorithms/LogarithmExponentialMethod.o: Algorithms/LogarithmExponentialMethod.cpp.o
+.PHONY : Algorithms/LogarithmExponentialMethod.o
+
+# target to build an object file
+Algorithms/LogarithmExponentialMethod.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/Algorithms/LogarithmExponentialMethod.cpp.o
+.PHONY : Algorithms/LogarithmExponentialMethod.cpp.o
+
+Algorithms/LogarithmExponentialMethod.i: Algorithms/LogarithmExponentialMethod.cpp.i
+.PHONY : Algorithms/LogarithmExponentialMethod.i
+
+# target to preprocess a source file
+Algorithms/LogarithmExponentialMethod.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/Algorithms/LogarithmExponentialMethod.cpp.i
+.PHONY : Algorithms/LogarithmExponentialMethod.cpp.i
+
+Algorithms/LogarithmExponentialMethod.s: Algorithms/LogarithmExponentialMethod.cpp.s
+.PHONY : Algorithms/LogarithmExponentialMethod.s
+
+# target to generate assembly for a file
+Algorithms/LogarithmExponentialMethod.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/Algorithms/LogarithmExponentialMethod.cpp.s
+.PHONY : Algorithms/LogarithmExponentialMethod.cpp.s
+
+Algorithms/PolarCoordintesMethod.o: Algorithms/PolarCoordintesMethod.cpp.o
+.PHONY : Algorithms/PolarCoordintesMethod.o
+
+# target to build an object file
+Algorithms/PolarCoordintesMethod.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/Algorithms/PolarCoordintesMethod.cpp.o
+.PHONY : Algorithms/PolarCoordintesMethod.cpp.o
+
+Algorithms/PolarCoordintesMethod.i: Algorithms/PolarCoordintesMethod.cpp.i
+.PHONY : Algorithms/PolarCoordintesMethod.i
+
+# target to preprocess a source file
+Algorithms/PolarCoordintesMethod.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/Algorithms/PolarCoordintesMethod.cpp.i
+.PHONY : Algorithms/PolarCoordintesMethod.cpp.i
+
+Algorithms/PolarCoordintesMethod.s: Algorithms/PolarCoordintesMethod.cpp.s
+.PHONY : Algorithms/PolarCoordintesMethod.s
+
+# target to generate assembly for a file
+Algorithms/PolarCoordintesMethod.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/Algorithms/PolarCoordintesMethod.cpp.s
+.PHONY : Algorithms/PolarCoordintesMethod.cpp.s
 
 Algorithms/QuadraticCongruentialMethod.o: Algorithms/QuadraticCongruentialMethod.cpp.o
 .PHONY : Algorithms/QuadraticCongruentialMethod.o
@@ -444,6 +540,30 @@ IStrategy.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/IStrategy.cpp.s
 .PHONY : IStrategy.cpp.s
 
+IUniformStrategy.o: IUniformStrategy.cpp.o
+.PHONY : IUniformStrategy.o
+
+# target to build an object file
+IUniformStrategy.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/IUniformStrategy.cpp.o
+.PHONY : IUniformStrategy.cpp.o
+
+IUniformStrategy.i: IUniformStrategy.cpp.i
+.PHONY : IUniformStrategy.i
+
+# target to preprocess a source file
+IUniformStrategy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/IUniformStrategy.cpp.i
+.PHONY : IUniformStrategy.cpp.i
+
+IUniformStrategy.s: IUniformStrategy.cpp.s
+.PHONY : IUniformStrategy.s
+
+# target to generate assembly for a file
+IUniformStrategy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/IUniformStrategy.cpp.s
+.PHONY : IUniformStrategy.cpp.s
+
 RandomGenerator.o: RandomGenerator.cpp.o
 .PHONY : RandomGenerator.o
 
@@ -514,6 +634,12 @@ help:
 	@echo "... gtest"
 	@echo "... gtest_main"
 	@echo "... random"
+	@echo "... Algorithms/AhrensGammaMethod.o"
+	@echo "... Algorithms/AhrensGammaMethod.i"
+	@echo "... Algorithms/AhrensGammaMethod.s"
+	@echo "... Algorithms/CorrelationMethod.o"
+	@echo "... Algorithms/CorrelationMethod.i"
+	@echo "... Algorithms/CorrelationMethod.s"
 	@echo "... Algorithms/FibonacciMethod.o"
 	@echo "... Algorithms/FibonacciMethod.i"
 	@echo "... Algorithms/FibonacciMethod.s"
@@ -523,6 +649,12 @@ help:
 	@echo "... Algorithms/LinealCongruentialMethod.o"
 	@echo "... Algorithms/LinealCongruentialMethod.i"
 	@echo "... Algorithms/LinealCongruentialMethod.s"
+	@echo "... Algorithms/LogarithmExponentialMethod.o"
+	@echo "... Algorithms/LogarithmExponentialMethod.i"
+	@echo "... Algorithms/LogarithmExponentialMethod.s"
+	@echo "... Algorithms/PolarCoordintesMethod.o"
+	@echo "... Algorithms/PolarCoordintesMethod.i"
+	@echo "... Algorithms/PolarCoordintesMethod.s"
 	@echo "... Algorithms/QuadraticCongruentialMethod.o"
 	@echo "... Algorithms/QuadraticCongruentialMethod.i"
 	@echo "... Algorithms/QuadraticCongruentialMethod.s"
@@ -538,6 +670,9 @@ help:
 	@echo "... IStrategy.o"
 	@echo "... IStrategy.i"
 	@echo "... IStrategy.s"
+	@echo "... IUniformStrategy.o"
+	@echo "... IUniformStrategy.i"
+	@echo "... IUniformStrategy.s"
 	@echo "... RandomGenerator.o"
 	@echo "... RandomGenerator.i"
 	@echo "... RandomGenerator.s"

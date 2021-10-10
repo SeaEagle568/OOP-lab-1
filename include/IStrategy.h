@@ -8,19 +8,11 @@
 
 class IStrategy {
 public:
-    double nextNumber();
 
-    double nextNumber(double lower, double upper);
+    virtual double nextNumber() = 0;
+    virtual double nextNumber(double lower, double upper) = 0;
 
     virtual ~IStrategy() = default;
-
-    virtual int nextInt() = 0;
-
-    virtual std::string getName() = 0;
-
-private:
-    virtual void updatePrev(int newNumber) = 0;
-    virtual int getM() = 0;
 };
 
 

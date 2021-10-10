@@ -8,8 +8,9 @@
 
 #include "../IStrategy.h"
 #include "Utils.h"
+#include "../IUniformStrategy.h"
 
-class InverseCongruentialMethod : public IStrategy {
+class InverseCongruentialMethod : public IUniformStrategy {
 public:
     explicit InverseCongruentialMethod(int seed, bool printInfo, bool useDefaults);
 

@@ -23,8 +23,8 @@ void InverseCongruentialMethod::printInfo(int seed, bool useDefaults) {
             cin >> this->previous;
             bool ok = true;
 
-            if (Utils::phi(m) != m-1) {
-                cout << "M should be prime" << endl;
+            if (Utils::phi(m) != m-1 && ((m & (m-1)) != 0)) {
+                cout << "M should be either prime or 2^x" << endl;
                 ok = false;
             }
             if (m < 0) {
@@ -37,6 +37,21 @@ void InverseCongruentialMethod::printInfo(int seed, bool useDefaults) {
             }
             if (c < 0 && c >= m) {
                 cout << "C should be >= 0 and < m" << endl;
+                ok = false;
+            }
+            if (((m & (m-1)) == 0)) {
+                if (a % 4 != 1) {
+                    cout << "A should be equal to 1 (mod 3)" << endl;
+                    ok = false;
+                }
+                if (c % 4 != 2) {
+                    cout << "C should be equal to 2 (mod 3)" << endl;
+                    ok = false;
+                }
+                if (m < (1<<3)) {
+                    cout << "M should be > 3" << endl;
+                    ok = false;
+                }
             }
 
             if (ok) break;

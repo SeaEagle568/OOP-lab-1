@@ -32,7 +32,7 @@ void UnityMethod::printInfo(bool useDefaults) {
     }
 }
 
-UnityMethod::UnityMethod(IStrategy* X, IStrategy* Y, bool printInfo, bool useDefaults) {
+UnityMethod::UnityMethod(IUniformStrategy* X, IUniformStrategy* Y, bool printInfo, bool useDefaults) {
     this->name = __func__;
     this->X = X;
     this->Y = Y;
@@ -41,7 +41,7 @@ UnityMethod::UnityMethod(IStrategy* X, IStrategy* Y, bool printInfo, bool useDef
     }
 }
 
-UnityMethod *UnityMethod::getUnityMethod(int seed1, int seed2, bool printInfo, bool useDefaults) {
+[[maybe_unused]] UnityMethod *UnityMethod::getUnityMethod(int seed1, int seed2, bool printInfo, bool useDefaults) {
     return new UnityMethod(
             new QuadraticCongruentialMethod(seed1, false, true),
             new InverseCongruentialMethod(seed2, false, true),

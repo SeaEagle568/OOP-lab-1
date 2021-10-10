@@ -8,12 +8,13 @@
 
 #include "../IStrategy.h"
 #include "Utils.h"
+#include "../IUniformStrategy.h"
 #include<bits/stdc++.h>
 
 using namespace std;
 
 
-class LinealCongruentialMethod : public IStrategy {
+class LinealCongruentialMethod : public IUniformStrategy {
 public:
     explicit LinealCongruentialMethod(int seed, bool printInfo, bool useDefaults);
 
